@@ -1,6 +1,7 @@
 language: java
 
-mvn package
+script:
+    mvn package
 
 notification:
  - email: false
