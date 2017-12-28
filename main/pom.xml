@@ -14,13 +14,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   
-  <repositories>
-    <repository>
-        <id>maven-jade</id>
-        <name>JADE</name>
-        <url>http://jade.tilab.com/maven/</url>
-    </repository>
-</repositories>
+  
 
   <dependencies>
   
