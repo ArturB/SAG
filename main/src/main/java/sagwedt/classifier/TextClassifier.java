@@ -10,6 +10,7 @@ import weka.classifiers.AbstractClassifier;
 import weka.classifiers.bayes.NaiveBayes;
 import weka.classifiers.functions.Logistic;
 import weka.core.Instance;
+import weka.core.SerializationHelper;
 
 /**
  * Klasyfikator binarny dokonujący klasyfikacji wektorów słów.<br>
@@ -32,6 +33,8 @@ public class TextClassifier
 	
 	private AbstractClassifier m_classifier;
 	private TrainingSet m_trainingSet;
+	
+	private TextClassifier() {}
 	
 	/**
 	 * Na podstawie podanego zbioru uczącego oraz algorytmu klasyfikacji z biblioteki
@@ -73,11 +76,18 @@ public class TextClassifier
 	/**
 	 * Tworzy klasyfikator na podstawie zawartości strumienia danych
 	 * @param in strumień danych zawierający zapisany klasyfikator
+	 * @throws Exception 
 	 */
-	public static TextClassifier loadClassifier(InputStream in)
+	public static TextClassifier loadClassifier(InputStream in) throws Exception
 	{
-		//TODO:
-		throw new UnsupportedOperationException("not implemented yet");
+		Object[] objs = SerializationHelper.readAll(in);
+		
+		TextClassifier classifier = new TextClassifier();
+		
+		classifier.m_classifier = (AbstractClassifier)objs[0];
+		classifier.m_trainingSet = (TrainingSet)objs[1];
+		
+		return classifier;
 	}
 	
 	/**
@@ -85,8 +95,9 @@ public class TextClassifier
 	 * 
 	 * @param path ścieżka do pliku z zapisanym klasyfikatorem.
 	 * @throws FileNotFoundException jeżeli nastąpił problem z wczytywaniem pliku.
+	 * @throws Exception
 	 */
-	public static TextClassifier loadClassifier(String path) throws FileNotFoundException
+	public static TextClassifier loadClassifier(String path) throws Exception
 	{
 		return loadClassifier(new FileInputStream(path));
 	}
@@ -95,8 +106,9 @@ public class TextClassifier
 	 * Zapisuje model klasyfikatora do pliku.
 	 * @param path ścieżka do pliku, w którym zostanie zapisany model klasyfikatora
 	 * @throws FileNotFoundException jeżeli nastąpił błąd podczas zapisu modelu do pliku
+	 * @throws Exception
 	 */
-	public void dumpClassifier(String path) throws FileNotFoundException
+	public void dumpClassifier(String path) throws Exception
 	{
 		dumpClassifier(new FileOutputStream(path));
 	}
@@ -104,11 +116,11 @@ public class TextClassifier
 	/**
 	 * Zrzuca model klasyfikatora do strumienia danych.
 	 * @param out strumień danych, do którego zostanie zapisany model klasyfikatora
+	 * @throws Exception 
 	 */
-	public void dumpClassifier(OutputStream out)
+	public void dumpClassifier(OutputStream out) throws Exception
 	{
-		// TODO:
-		throw new UnsupportedOperationException("not implemented yet");
+		SerializationHelper.writeAll(out, new Object[] {m_classifier, m_trainingSet});
 	}
 	
 	/**

@@ -1,5 +1,6 @@
 package sagwedt.classifier;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import weka.core.Instance;
@@ -14,8 +15,9 @@ import weka.core.SparseInstance;
  * {@code StructureBuilder.generateEmptyTrainingSet}. Wektory słów do zbioru
  * uczącego dodaje się metodą {@code addToTrainingSet}.
  */
-public class TrainingSet
+public class TrainingSet implements Serializable
 {
+	private static final long serialVersionUID = -3317734724160819802L;
 	private Instances m_dataset;
 	
 	/**
