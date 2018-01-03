@@ -1,18 +1,19 @@
 package sagwedt.classifier;
 
 import java.util.ArrayList;
+import java.util.Map;
+import java.util.TreeMap;
 
 import weka.core.Attribute;
-import weka.core.DenseInstance;
 import weka.core.Instance;
 import weka.core.Instances;
+import weka.core.SparseInstance;
 import weka.core.stemmers.IteratedLovinsStemmer;
 import weka.core.stemmers.Stemmer;
 import weka.core.stopwords.Rainbow;
 import weka.core.stopwords.StopwordsHandler;
 import weka.core.tokenizers.AlphabeticTokenizer;
 import weka.core.tokenizers.Tokenizer;
-import weka.filters.unsupervised.attribute.StringToWordVector;
 
 /**
  * Klasa odpowiedzialna za konwersję tekstu do wektora słów.
@@ -26,8 +27,9 @@ import weka.filters.unsupervised.attribute.StringToWordVector;
  */
 public class TextToVector
 {
-	StringToWordVector m_filter;
-	Instances m_inputStructure;
+	Stemmer m_stemmer;
+	Tokenizer m_tokenizer;
+	StopwordsHandler m_stopwordsHandler;
 	
 	public static String prefix = "w_";
 	
@@ -36,17 +38,9 @@ public class TextToVector
 	 */
 	public TextToVector()
 	{
-		ArrayList<Attribute> attList = new ArrayList<Attribute>();
-		attList.add(new Attribute("text", true));
-		m_inputStructure = new Instances("text.in", attList, 0);
-		
-		m_filter = new StringToWordVector();
-		m_filter.setAttributeNamePrefix(prefix);
-		m_filter.setOutputWordCounts(true);
-		m_filter.setStopwordsHandler(new Rainbow());
-		m_filter.setTokenizer(new AlphabeticTokenizer());
-		m_filter.setStemmer(new IteratedLovinsStemmer());
-		m_filter.setSelectedRange("1"); // indexed from 1
+		m_stemmer = new IteratedLovinsStemmer();
+		m_tokenizer = new AlphabeticTokenizer();
+		m_stopwordsHandler = new Rainbow();
 	}
 	
 	/**
@@ -55,7 +49,7 @@ public class TextToVector
 	 */
 	public void setStemmer(Stemmer stemmer)
 	{
-		m_filter.setStemmer(stemmer);
+		m_stemmer = stemmer;
 	}
 	
 	/**
@@ -64,7 +58,7 @@ public class TextToVector
 	 */
 	public void setStopwordList(StopwordsHandler handler)
 	{
-		m_filter.setStopwordsHandler(handler);
+		m_stopwordsHandler = handler;
 	}
 	
 	/**
@@ -73,30 +67,59 @@ public class TextToVector
 	 */
 	public void setTokenizer(Tokenizer tokenizer)
 	{
-		m_filter.setTokenizer(tokenizer);
+		if(tokenizer == null)
+			throw new IllegalArgumentException("tokenizer should be non-null");
+		m_tokenizer = tokenizer;
 	}
 	
 	/**
 	 * Dokonuje konwersji tekstu na wektor słów.
 	 * @param text treść tekstu
 	 * @return wektor słów reprezentujący przekazany tekst
-	 * @throws Exception wyjątek generowany przez Weka, jeżeli konwersja się nie powiedzie
 	 */
-	public Instance convert(String text) throws Exception
+	public Instance convert(String text)
 	{
-		// the output format is set only when the batchFinished() method is called for the first time
-		// (i.e. for the first batch). The method setInputFormat(...) resets the batch count.
-		m_filter.setInputFormat(m_inputStructure);
+		// word -> number of occurences, sorted lexicographically
+		TreeMap<String, Integer> dictionary = new TreeMap<String, Integer>();
 		
-		Instance instance = new DenseInstance(1);
-		instance.setDataset(m_inputStructure);
-		instance.setValue(0, text);
+		m_tokenizer.tokenize(text);
+
+		while(m_tokenizer.hasMoreElements())
+		{
+			String word = m_tokenizer.nextElement().toLowerCase();
+			
+			if(m_stopwordsHandler != null && m_stopwordsHandler.isStopword(word))
+				continue;
+			
+			if(m_stemmer != null)
+				word = m_stemmer.stem(word);
+			
+			if(dictionary.containsKey(word))
+				dictionary.put(word, dictionary.get(word) + 1);
+			else
+				dictionary.put(word, 1);
+		}
 		
-		m_filter.input(instance);
-		m_filter.batchFinished();
+		// ----------
 		
-		//TODO: Weka ma taki problem, że stosuje stemmer PRZED listą stopwords. W efekcie lista stopwords kompletnie nie działa. Trzeba będzie ręcznie przefiltrować słowa.
+		ArrayList<Attribute> attributes = new ArrayList<Attribute>();
 		
-		return m_filter.output();
+		int index = 0;
+		double[] values = new double[dictionary.size()];
+		int[] indices = new int[dictionary.size()];
+		
+		for(Map.Entry<String, Integer> entry: dictionary.entrySet())
+		{
+			attributes.add(new Attribute(entry.getKey(), false));
+			values[index] = (double)entry.getValue();
+			indices[index] = index;
+			++index;
+		}
+		
+		Instances dataset = new Instances("wordvector", attributes, 0);
+		Instance instance = new SparseInstance(1.0, values, indices, dictionary.size());
+		instance.setDataset(dataset);
+		
+		return instance;
 	}
 }

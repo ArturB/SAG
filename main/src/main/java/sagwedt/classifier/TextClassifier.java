@@ -116,10 +116,11 @@ public class TextClassifier
 	 * należy do klasy decyzyjnej obsługiwanej przez klasyfikator.
 	 * @param instance wektor słów
 	 * @return wyznaczona wartość prawdopodobieństwa z zakresu od 0.0 do 1.0
+	 * @throws Exception 
 	 */
-	public double classifyInstance(Instance instance)
+	public double classifyInstance(Instance instance) throws Exception
 	{
-		// TODO:
-		throw new UnsupportedOperationException("not implemented yet");
+		double[] dist = m_classifier.distributionForInstance(m_trainingSet.adaptInstance(instance));
+		return dist[1];
 	}
 }

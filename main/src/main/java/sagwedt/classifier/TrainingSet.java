@@ -1,7 +1,10 @@
 package sagwedt.classifier;
 
+import java.util.ArrayList;
+
 import weka.core.Instance;
 import weka.core.Instances;
+import weka.core.SparseInstance;
 
 /**
  * Klasa przechowująca strukturę przyszłego klasyfikatora oraz wszystkie
@@ -33,24 +36,14 @@ public class TrainingSet
 	 */
 	public void add(Instance instance, boolean isPositive)
 	{
-		//TODO: 
-		throw new UnsupportedOperationException("not implemented yet");
+		Instance adapted = adaptInstance(instance);
 		
-		// apply the instance to the dataset
-
-		/*
-		 * dataset structure:
-		 * {positive, w_abcd, w_foo, w_qwerty, w_xyz}
-		 * instance vector:
-		 * {w_abcd, w_qwerty}
-		 */
+		if(isPositive)
+			adapted.setValue(0, StructureBuilder.VAL_YES);
+		else
+			adapted.setValue(0, StructureBuilder.VAL_NO);
 		
-		/*int structIndex = 1; // omitting the tag
-		int instanceIndex = 0;
-		
-		ArrayList<Pair<Integer, Integer>> values = new ArrayList<Integer>();
-		
-		Instance newInst = new SparseInstance()*/
+		m_dataset.add(adapted);
 	}
 	
 	/**
@@ -61,8 +54,52 @@ public class TrainingSet
 	 */
 	public Instance adaptInstance(Instance instance)
 	{
-		//TODO:
-		throw new UnsupportedOperationException("not implemented yet");
+		// pairs to be inserted into the sparse instance
+		ArrayList<Double> values = new ArrayList<Double>();
+		ArrayList<Integer> indices = new ArrayList<Integer>();
+		
+		// tag
+		values.add(0.0);
+		indices.add(0);
+		
+		int instanceIndex = 0;
+		String instanceString = null;
+		
+		for(int structIndex = 1; structIndex < m_dataset.numAttributes() && instanceIndex < instance.numAttributes();)
+		{
+			if(instanceString == null)
+				instanceString = instance.attribute(instanceIndex).name();
+				
+			int cmp = instanceString.compareTo(m_dataset.attribute(structIndex).name());
+			
+			if(cmp == 0)
+			{
+				values.add(instance.value(instanceIndex));
+				indices.add(structIndex);
+				++structIndex;
+				++instanceIndex;
+				instanceString = null;
+			} else if(cmp < 0) // słowo zostało przeskoczone
+			{
+				++instanceIndex;
+				instanceString = null;
+			} else
+				++structIndex;
+		}
+		
+		double[] attValues = new double[values.size()];
+		int[] attIndices = new int[indices.size()];
+		
+		for(int i=0; i<values.size(); ++i)
+		{
+			attValues[i] = values.get(i);
+			attIndices[i] = indices.get(i);
+		}
+		
+		Instance newInst = new SparseInstance(1.0, attValues, attIndices, m_dataset.numAttributes());
+		newInst.setDataset(m_dataset);
+		
+		return newInst;
 	}
 	
 	public Instances getDataset()

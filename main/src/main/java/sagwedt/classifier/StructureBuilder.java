@@ -22,6 +22,11 @@ public class StructureBuilder
 	private TreeMap<String, Integer> m_wordCounts;
 	//private int m_wordLimit;
 	
+	public static final String NO = "no";
+	public static final String YES = "yes";
+	public static final double VAL_NO = 0.0;
+	public static final double VAL_YES = 1.0;
+	
 	public StructureBuilder()
 	{
 		m_wordCounts = new TreeMap<String, Integer>();
@@ -69,7 +74,7 @@ public class StructureBuilder
 		//TODO: tymczasowo jest tworzona struktura z nieograniczoną liczbą słów
 		
 		ArrayList<Attribute> attList = new ArrayList<Attribute>();
-		attList.add(new Attribute("positive", Arrays.asList("yes", "no")));
+		attList.add(new Attribute("positive", Arrays.asList(NO, YES)));
 		
 		for(Map.Entry<String, Integer> entry: m_wordCounts.entrySet())
 			attList.add(new Attribute(entry.getKey(), false));
