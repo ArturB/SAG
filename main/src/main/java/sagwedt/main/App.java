@@ -1,7 +1,5 @@
 package sagwedt.main;
 
-import jade.core.AID;
-
 /**
  * Hello world!
  *
