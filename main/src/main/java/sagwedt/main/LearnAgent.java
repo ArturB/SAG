@@ -5,6 +5,7 @@ import akka.japi.pf.ReceiveBuilder;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
 import sagwedt.classifier.*;
+import sagwedt.message.Learn;
 import sagwedt.message.Request;
 import sagwedt.message.Response;
 import sagwedt.message.Untrained;
@@ -107,6 +108,12 @@ class LearnAgent extends AbstractActor {
             double bayesProb = classifierBayes.classifyInstance(cv);
             double logisticProb = classifierLogistic.classifyInstance(cv);
             getSender().tell(new Response(bayesProb, logisticProb, className), getSelf());
+        });
+        rbuilder.match(Learn.class, learn -> {
+            learnFromDirectory(
+                    learn.getPositiveDataPath(),
+                    learn.getNegativeDataPath(),
+                    learn.getWordLimit());
         });
         rbuilder.matchAny(o -> log.info("Unknown message type!"));
 

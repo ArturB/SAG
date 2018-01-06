@@ -38,5 +38,6 @@
     <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.12.4" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe:config:1.3.2" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang.modules:scala-java8-compat_2.12:0.8.0" level="project" />
+    <orderEntry type="library" name="Maven: commons-cli:commons-cli:1.4" level="project" />
   </component>
 </module>
