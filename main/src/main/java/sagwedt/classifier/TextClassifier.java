@@ -25,11 +25,7 @@ import weka.core.SerializationHelper;
  */
 public class TextClassifier
 {
-	/** Wybrane dostępne algorytmy klasyfikacji */
-	public enum Algorithm {
-		NAIVE_BAYES,
-		LOGISTIC_REGRESSION
-	}
+
 	
 	private AbstractClassifier m_classifier;
 	private TrainingSet m_trainingSet;
