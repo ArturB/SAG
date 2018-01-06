@@ -1,31 +1,33 @@
 package sagwedt.main;
 
+import akka.actor.*;
+import akka.japi.pf.ReceiveBuilder;
+import akka.event.Logging;
+import akka.event.LoggingAdapter;
 import sagwedt.classifier.*;
-import sagwedt.message.*;
+import sagwedt.message.Request;
+import sagwedt.message.Response;
+import sagwedt.message.Untrained;
+import weka.core.Instance;
 
-import java.beans.ExceptionListener;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.LinkedList;
-import java.util.concurrent.TimeUnit;
 import java.util.List;
 
-import akka.actor.ActorRef;
-import akka.actor.ActorSystem;
-import akka.actor.Props;
-import akka.actor.UntypedActor;
-import akka.actor.UntypedActorFactory;
-import akka.routing.RoundRobinRouter;
-import sagwedt.message.Request;
-import weka.core.Instance;
 
+class LearnAgent extends AbstractActor {
+    private TextClassifier classifierBayes = null;
+    private TextClassifier classifierLogistic = null;
+    private String className;
 
-class LearnAgent extends UntypedActor {
-    TextClassifier classifierBayes = null;
-    TextClassifier classifierLogistic = null;
-    String className;
+    private final LoggingAdapter log = Logging.getLogger(getContext().getSystem(), this);
+
+    public LearnAgent() {
+
+    }
 
     public String getClassName() {
         return className;
@@ -54,6 +56,8 @@ class LearnAgent extends UntypedActor {
             String negativeExamplesPath,
             int wordLimit
     ) throws Exception {
+
+        if(positiveExamplesPath == null || negativeExamplesPath == null) throw new Exception();
 
         File positiveExamplesDir, negativeExamplesDir;
 
@@ -88,21 +92,24 @@ class LearnAgent extends UntypedActor {
         classifierLogistic = new TextClassifier(ts, Algorithm.LOGISTIC_REGRESSION);
     }
 
+
+
     @Override
-    public void onReceive(Object message) throws Exception {
-        if (message instanceof Request) {
-            if(classifierBayes == null || classifierLogistic == null) {
+    public Receive createReceive() {
+        ReceiveBuilder rbuilder = ReceiveBuilder.create();
+
+        rbuilder.match(Request.class, request -> {
+            if (classifierBayes == null || classifierLogistic == null) {
                 getSender().tell(new Untrained(className), getSelf());
             }
 
-            Request request = (Request) message;
             Instance cv = new TextToVector().convert(request.getTextToClassify());
             double bayesProb = classifierBayes.classifyInstance(cv);
             double logisticProb = classifierLogistic.classifyInstance(cv);
             getSender().tell(new Response(bayesProb, logisticProb, className), getSelf());
+        });
+        rbuilder.matchAny(o -> log.info("Unknown message type!"));
 
-        } else {
-            unhandled(message);
-        }
+        return rbuilder.build();
     }
 }
