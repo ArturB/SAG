@@ -73,7 +73,7 @@
 							<archive>
 								<manifest>
 									<mainClass>
-                                        sagwedt.classifier.Launcher
+                                        sag.classifier.Launcher
                                     </mainClass>
 								</manifest>
 							</archive>
@@ -94,7 +94,7 @@
                             <archive>
                                 <manifest>
                                     <mainClass>
-                                        sagwedt.teacher.Agent
+                                        sag.teacher.Agent
                                     </mainClass>
                                 </manifest>
                             </archive>
@@ -124,7 +124,7 @@
                             <jar>target/launcher.jar</jar>
                             <errTitle>SAG System Launcher</errTitle>
                             <classPath>
-                                <mainClass>sagwedt.classifier.Launcher</mainClass>
+                                <mainClass>sag.classifier.Launcher</mainClass>
                                 <addDependencies>true</addDependencies>
                                 <preCp>anything</preCp>
                             </classPath>

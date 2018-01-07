@@ -1,4 +1,4 @@
-package sagwedt.fx;
+package sag.fx;
 
 import javafx.application.Application;
 import javafx.stage.Stage;

@@ -1,11 +1,10 @@
-package sagwedt.classifier;
+package sag.classifier;
 
 import akka.actor.*;
 import akka.japi.pf.ReceiveBuilder;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
-import sagwedt.classifier.*;
-import sagwedt.message.*;
+import sag.message.*;
 import weka.core.Instance;
 
 import java.io.File;
@@ -15,16 +14,23 @@ import java.nio.file.Paths;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Pojedynczy agent wykonujący zadanie klasyfikacji binarnej: obiekt należy bądź nie zależy do przetwarzanej jednej klasy danych. Klasyfikacja wykonywana jest dwoma algorytmami ({@link sag.classifier.Algorithm}): naiwnym Bayesem oraz regresją logistyczną.
+ */
+public class Agent extends AbstractActor {
 
-class Agent extends AbstractActor {
     private TextClassifier classifierBayes = null;
     private TextClassifier classifierLogistic = null;
     private String className;
 
     private final LoggingAdapter log = Logging.getLogger(getContext().getSystem(), this);
 
-    public Agent() {
-
+    /**
+     * Konstruktor agenta. Świeżo skonstruowany agent nie jest jeszcze niczego nauczony.
+     * @param className Nazwa analizowanej klasy.
+     */
+    public Agent(String className) {
+        this.className = className;
     }
 
     public String getClassName() {
@@ -35,13 +41,12 @@ class Agent extends AbstractActor {
         this.className = className;
     }
 
-    public Agent(String className) throws Exception {
-        if(className == null) {
-            throw new Exception();
-        }
-        this.className = className;
-    }
-
+    /**
+     * Konwertuje plik tekstowy z CV do postaci wektora biblioteki Weka.
+     * @param plik Uchwyt do pliku z CV.
+     * @return Wektor biblioteki Weka odpowiadający CV.
+     * @throws IOException Podana ścieżka jest niepoprawna.
+     */
     private Instance getCVAsVector(File plik) throws IOException {
         TextToVector converter = new TextToVector();
         return converter.convert(new String(
@@ -49,17 +54,35 @@ class Agent extends AbstractActor {
         ));
     }
 
+    /**
+     * Uczy agenta na podstawie zbioru plików CV z zadanego katalogu. Jeżeli agent był już wcześniej czegoś uczony, to do już posiadanej bazy wiedzy dodawane są nowe dane. Stosuje domyślny limit słow 1000.
+     * @param positiveExamplesPath Katalog z przykładami CV należących do klasy.
+     * @param negativeExamplesPath Katalog z przykładami CV nienależących do klasy.
+     * @throws Exception Któraś z podanych ścieżek jest niepoprawna.
+     */
+    public void learnFromDirectory (
+            String positiveExamplesPath,
+            String negativeExamplesPath
+    ) throws Exception {
+        learnFromDirectory(positiveExamplesPath, negativeExamplesPath, 1000);
+    }
+
+    /**
+     * Uczy agenta na podstawie zbioru plików CV z zadanego katalogu. Jeżeli agent był już wcześniej czegoś uczony, to wcześniej zapisana baza wiedzy zostaje nadpisana nowymi danymi.
+     * @param positiveExamplesPath Katalog z przykładami CV należących do klasy.
+     * @param negativeExamplesPath Katalog z przykładami CV nienależących do klasy.
+     * @param wordLimit Limit słów używanych w klasyfikatorze.
+     * @throws IOException Któraś z podanych ścieżek jest niepoprawna.
+     */
     public void learnFromDirectory(
             String positiveExamplesPath,
             String negativeExamplesPath,
             int wordLimit
     ) throws Exception {
 
-        if(positiveExamplesPath == null || negativeExamplesPath == null) throw new Exception();
-
         File positiveExamplesDir, negativeExamplesDir;
-
         StructureBuilder sbuilder = new StructureBuilder();
+
         sbuilder.setWordLimit(wordLimit);
         positiveExamplesDir = new File(positiveExamplesPath);
         negativeExamplesDir = new File(negativeExamplesPath);
@@ -90,12 +113,17 @@ class Agent extends AbstractActor {
         classifierLogistic = new TextClassifier(ts, Algorithm.LOGISTIC_REGRESSION);
     }
 
-
-
+    /**
+     * Obsługa komunikatów:
+     * {@link sag.message.Request} - wykonaj zadanie klasyfikacji na podanym w komunikacie CV i odeślij odpowiedź {@link sag.message.Response}
+     * {@link sag.message.Learn} - wykonaj uzenie klasyfikatorów na zadanym zbiorze danych.
+     * @return Receiver komunikatów.
+     */
     @Override
     public Receive createReceive() {
         ReceiveBuilder rbuilder = ReceiveBuilder.create();
 
+        // REQUEST - wykonaj klasyfikcję
         rbuilder.match(Request.class, request -> {
             if (classifierBayes == null || classifierLogistic == null) {
                 getSender().tell(new Untrained(className), getSelf());
@@ -106,6 +134,8 @@ class Agent extends AbstractActor {
             double logisticProb = classifierLogistic.classifyInstance(cv);
             getSender().tell(new Response(bayesProb, logisticProb, className), getSelf());
         });
+
+        // LEARN - naucz klasyfikatory
         rbuilder.match(Learn.class, learn -> {
             try {
                 learnFromDirectory(
@@ -117,10 +147,9 @@ class Agent extends AbstractActor {
             catch(IOException ioe) {
                 getSender().tell(new LearnReply(false, "Invalid data path"), getSelf());
             }
-            catch(Exception e) {
-                getSender().tell(new LearnReply(false, "Classifier initialization error"), getSelf());
-            }
         });
+
+        // DEFAULT
         rbuilder.matchAny(o -> log.info("Unknown message type!"));
 
         return rbuilder.build();

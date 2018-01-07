@@ -1,20 +1,29 @@
-package sagwedt.classifier;
+package sag.classifier;
 
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
 import org.apache.commons.cli.*;
 
+/**
+ * Program uruchamiający zadaną liczbę klasyfikatorów w systemie.
+ */
 public class Launcher {
 
+    /**
+     * Entry point.
+     * @param args Command-line parametrs.
+     */
     public static void main( String[] args )
     {
+        // Lista obsługiwanych opcji CLI
         DefaultParser parser = new DefaultParser();
         Options opts = new Options();
         opts.addOption("n", "agents-number", true, "Number of agents to run");
         opts.addOption("id", true, "System name (identifier). The default name is SAG");
         opts.addOption("h", "help", false, "Show this help");
 
+        // parsuj argumenty CLI
         try {
             CommandLine cmd = parser.parse(opts, args);
             int n = -1;
@@ -37,6 +46,7 @@ public class Launcher {
                 name = cmd.getOptionValue("name");
             }
 
+            // Jeśli wszystkie parametry są podane, uruchom odpowiednią liczbę klasyfikatorów.
             ActorSystem system = ActorSystem.create(name);
             Props props = Props.create(Agent.class);
             System.out.println("Running " + String.valueOf(n) + " agents. Agents refs:");
@@ -48,8 +58,6 @@ public class Launcher {
         catch(ParseException e) {
             System.out.println("Unknown option!");
         }
-
-
     }
 
 }

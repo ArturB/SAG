@@ -1,11 +1,13 @@
-package sagwedt.teacher;
+package sag.teacher;
 
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
 import org.apache.commons.cli.*;
-import sagwedt.message.Teach;
 
+/**
+ * Program pozwalający zlecać klasyfikatorom zdania uczenia się.
+ */
 public class Teacher {
     public static void main(String[] args) {
         DefaultParser parser = new DefaultParser();

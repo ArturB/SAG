@@ -1,11 +1,14 @@
-package sagwedt.teacher;
+package sag.teacher;
 
 import akka.actor.AbstractActor;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
 import akka.japi.pf.ReceiveBuilder;
-import sagwedt.message.*;
+import sag.message.*;
 
+/**
+ * Agent zlecający klasyfikatorom zdania uczenia się.
+ */
 public class Agent extends AbstractActor {
 
     private final LoggingAdapter log = Logging.getLogger(getContext().getSystem(), this);

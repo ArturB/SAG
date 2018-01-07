@@ -1,10 +1,19 @@
-package sagwedt.message;
+package sag.message;
 
+/**
+ * Komunikat wysyłany przez nauczyciela do klasyfikatora. Zawiera lokalizację danych, na podstawie których klasyfikator wykonuje uczenie.
+ */
 public class Learn {
     private String positiveDataPath;
     private String negativeDataPath;
     private int wordLimit;
 
+    /**
+     * Konstruktor komunikatu.
+     * @param positiveDataPath Ścieżka do przykładów należących do klasy.
+     * @param negativeDataPath Ścieżka do przykładów nienależących do klasy.
+     * @param wordLimit Limit liczby analizowanych słów.
+     */
     public Learn(String positiveDataPath, String negativeDataPath, int wordLimit) {
         this.positiveDataPath = positiveDataPath;
         this.negativeDataPath = negativeDataPath;

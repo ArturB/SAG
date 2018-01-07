@@ -1,9 +1,17 @@
-package sagwedt.message;
+package sag.message;
 
+/**
+ * Komunikat wysyłany do nauczyciela. Zawiera zlecenie wykonania uczenia przez określonego adresem agenta.
+ */
 public class Teach {
     private String agentPath;
     private Learn learnTask;
 
+    /**
+     *
+     * @param agentPath Adres agenta który powinien wykonać uczenie.
+     * @param learnTask Zadanie uczenia - ścieżki do baz danych oraz inne parametry.
+     */
     public Teach(String agentPath, Learn learnTask) {
         this.agentPath = agentPath;
         this.learnTask = learnTask;

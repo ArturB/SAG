@@ -1,7 +1,7 @@
-package sagwedt.message;
+package sag.message;
 
 /**
- * Odpowiedź klasyfikatora za zadanie klasyfikacji tekstu. Zawiera prawdopodobieństwo danej klasy.
+ * Odpowiedź klasyfikatora za zadanie klasyfikacji tekstu. Zawiera wyznaczone przez klasyfikator prawdopodobieństwo należenia sklasyfikowanego tekstu do obsługiwanej przez klasyfikator klasy. .
  * Wysyłany tylko przez klasyfikatory już nauczone oczekiwanej klasy.
  */
 public class Response {
@@ -9,14 +9,7 @@ public class Response {
     private double logisticProb;
     private String className;
 
-    private void checkClassName() throws Exception {
-        String noClassException = "No class name!";
-        if(className == null)
-            throw new Exception(noClassException);
-    }
-
     /**
-     * Domyślny konstruktor.
      * @param bayesProb Prawdopodobieństwo obliczone metodą Bayesa.
      * @param logisticProb Prawdopodobieństwo obliczone metodą logistyczną.
      * @param className Nazwa analizowanej klasy.
@@ -49,6 +42,5 @@ public class Response {
 
     public void setClassName(String className) throws Exception {
         this.className = className;
-        checkClassName();
     }
 }
