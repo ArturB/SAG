@@ -1,14 +1,11 @@
-package sagwedt.main;
+package sagwedt.classifier;
 
 import akka.actor.*;
 import akka.japi.pf.ReceiveBuilder;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
 import sagwedt.classifier.*;
-import sagwedt.message.Learn;
-import sagwedt.message.Request;
-import sagwedt.message.Response;
-import sagwedt.message.Untrained;
+import sagwedt.message.*;
 import weka.core.Instance;
 
 import java.io.File;
@@ -19,14 +16,14 @@ import java.util.LinkedList;
 import java.util.List;
 
 
-class LearnAgent extends AbstractActor {
+class Agent extends AbstractActor {
     private TextClassifier classifierBayes = null;
     private TextClassifier classifierLogistic = null;
     private String className;
 
     private final LoggingAdapter log = Logging.getLogger(getContext().getSystem(), this);
 
-    public LearnAgent() {
+    public Agent() {
 
     }
 
@@ -38,7 +35,7 @@ class LearnAgent extends AbstractActor {
         this.className = className;
     }
 
-    public LearnAgent(String className) throws Exception {
+    public Agent(String className) throws Exception {
         if(className == null) {
             throw new Exception();
         }
@@ -110,10 +107,19 @@ class LearnAgent extends AbstractActor {
             getSender().tell(new Response(bayesProb, logisticProb, className), getSelf());
         });
         rbuilder.match(Learn.class, learn -> {
-            learnFromDirectory(
-                    learn.getPositiveDataPath(),
-                    learn.getNegativeDataPath(),
-                    learn.getWordLimit());
+            try {
+                learnFromDirectory(
+                        learn.getPositiveDataPath(),
+                        learn.getNegativeDataPath(),
+                        learn.getWordLimit());
+                getSender().tell(new LearnReply(true, "Success"), getSelf());
+            }
+            catch(IOException ioe) {
+                getSender().tell(new LearnReply(false, "Invalid data path"), getSelf());
+            }
+            catch(Exception e) {
+                getSender().tell(new LearnReply(false, "Classifier initialization error"), getSelf());
+            }
         });
         rbuilder.matchAny(o -> log.info("Unknown message type!"));
 

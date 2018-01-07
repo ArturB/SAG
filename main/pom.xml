@@ -58,12 +58,14 @@
     			<artifactId>maven-assembly-plugin</artifactId>
     			<executions>
         			<execution>
+                        <id>sag-launcher</id>
             			<phase>package</phase>
             			<goals>
                 			<goal>single</goal>
             			</goals>
             			<configuration>
-							<finalName>sag-launcher</finalName>
+							<finalName>launcher</finalName>
+
                             <appendAssemblyId>false</appendAssemblyId>
                 			<descriptorRefs>
                     			<descriptorRef>jar-with-dependencies</descriptorRef>
@@ -71,12 +73,33 @@
 							<archive>
 								<manifest>
 									<mainClass>
-										sagwedt.main.Launcher
-									</mainClass>
+                                        sagwedt.classifier.Launcher
+                                    </mainClass>
 								</manifest>
 							</archive>
             			</configuration>
         			</execution>
+                    <execution>
+                        <id>sag-teacher</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <configuration>
+                            <finalName>teacher</finalName>
+                            <appendAssemblyId>false</appendAssemblyId>
+                            <descriptorRefs>
+                                <descriptorRef>jar-with-dependencies</descriptorRef>
+                            </descriptorRefs>
+                            <archive>
+                                <manifest>
+                                    <mainClass>
+                                        sagwedt.teacher.Agent
+                                    </mainClass>
+                                </manifest>
+                            </archive>
+                        </configuration>
+                    </execution>
     			</executions>
 			</plugin>
 			<plugin>
@@ -87,6 +110,32 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+            <plugin>
+                <groupId>com.akathist.maven.plugins.launch4j</groupId>
+                <artifactId>launch4j-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>launcher-win</id>
+                        <phase>package</phase>
+                        <goals><goal>launch4j</goal></goals>
+                        <configuration>
+                            <headerType>console</headerType>
+                            <outfile>target/launcher.exe</outfile>
+                            <jar>target/launcher.jar</jar>
+                            <errTitle>SAG System Launcher</errTitle>
+                            <classPath>
+                                <mainClass>sagwedt.classifier.Launcher</mainClass>
+                                <addDependencies>true</addDependencies>
+                                <preCp>anything</preCp>
+                            </classPath>
+                            <jre>
+                                <minVersion>1.8.0</minVersion>
+                            </jre>
+
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
 		</plugins>
 	</build>
   

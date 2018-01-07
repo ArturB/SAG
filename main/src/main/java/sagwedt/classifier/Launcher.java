@@ -1,14 +1,8 @@
-package sagwedt.main;
+package sagwedt.classifier;
 
-import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
-import akka.event.Logging;
-import akka.event.LoggingAdapter;
-import akka.japi.Option;
-import akka.japi.pf.ReceiveBuilder;
-import javafx.application.Application;
 import org.apache.commons.cli.*;
 
 public class Launcher {
@@ -27,7 +21,7 @@ public class Launcher {
             if(cmd.hasOption("h")) {
                 HelpFormatter formatter = new HelpFormatter();
                 formatter.printHelp( "sag-launcher", opts, true );
-                System.exit(-1);
+                System.exit(0);
             }
             if(cmd.hasOption("n")) {
                 n = Integer.parseInt(cmd.getOptionValue("n"));
@@ -44,10 +38,11 @@ public class Launcher {
             }
 
             ActorSystem system = ActorSystem.create(name);
-            Props props = Props.create(LearnAgent.class);
+            Props props = Props.create(Agent.class);
+            System.out.println("Running " + String.valueOf(n) + " agents. Agents refs:");
             for(int i = 0; i < n; ++i) {
                 ActorRef ref = system.actorOf(props);
-                System.out.println(ref.path().toString());
+                System.out.println("  " + ref.path().toString());
             }
         }
         catch(ParseException e) {
