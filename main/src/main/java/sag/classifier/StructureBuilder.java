@@ -79,10 +79,14 @@ public class StructureBuilder
 	
 	/**
 	 * Generuje strukturę klasyfikatora na podstawie dotychczas zebranych wektorów słów.
+	 * Struktura powinna zawierać co najmniej jedno słowo.
 	 * @return struktura klasyfikatora
 	 */
 	public TrainingSet generateEmptyTrainingSet()
 	{
+		if(m_wordCounts.isEmpty())
+			throw new IllegalStateException("no words in the structure");
+		
 		if(m_calculatedDataset != null)
 			return new TrainingSet(m_calculatedDataset);
 		
