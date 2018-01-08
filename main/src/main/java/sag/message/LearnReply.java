@@ -1,11 +1,14 @@
 package sag.message;
 
+import java.io.Serializable;
+
 /**
  * Komunikat wysyłany przez klasyfikator do nauczyciela w odpowiedzi na komunikat {@link sag.message.Learn}. Zawiera informacje nt. efektu uczenia - sukcesie bądź błędzie.
  */
-public class LearnReply {
-    Boolean success;
-    String msg;
+public class LearnReply implements Serializable {
+    private Boolean success;
+    private String msg;
+    private static final long serialVersionUID = 48309483980520L;
 
     /**
      * @param success Czy uczenie zakończono sukcesem?

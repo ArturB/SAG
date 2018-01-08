@@ -1,13 +1,16 @@
 package sag.message;
 
+import java.io.Serializable;
+
 /**
  * Odpowiedź klasyfikatora za zadanie klasyfikacji tekstu. Zawiera wyznaczone przez klasyfikator prawdopodobieństwo należenia sklasyfikowanego tekstu do obsługiwanej przez klasyfikator klasy. .
  * Wysyłany tylko przez klasyfikatory już nauczone oczekiwanej klasy.
  */
-public class Response {
+public class Response implements Serializable {
     private double bayesProb;
     private double logisticProb;
     private String className;
+    private static final long serialVersionUID = 68539058435850385L;
 
     /**
      * @param bayesProb Prawdopodobieństwo obliczone metodą Bayesa.

@@ -33,6 +33,16 @@ public class Agent extends AbstractActor {
         this.className = className;
     }
 
+    /**
+     * Generator of actor.
+     * @param className Nazwa analizowanej klasy.
+     * @return
+     */
+    static public Props props(String className) {
+        return Props.create(Agent.class, () -> new Agent(className));
+    }
+
+
     public String getClassName() {
         return className;
     }
@@ -146,6 +156,9 @@ public class Agent extends AbstractActor {
             }
             catch(IOException ioe) {
                 getSender().tell(new LearnReply(false, "Invalid data path"), getSelf());
+            }
+            catch(Exception e) {
+                getSender().tell(new LearnReply(false, e.getMessage()), getSelf());
             }
         });
 

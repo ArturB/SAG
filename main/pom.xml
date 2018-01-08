@@ -39,6 +39,13 @@
 		  <version>2.5.8</version>
 	  </dependency>
 
+      <!-- https://mvnrepository.com/artifact/com.typesafe.akka/akka-remote -->
+      <dependency>
+          <groupId>com.typesafe.akka</groupId>
+          <artifactId>akka-remote_2.12</artifactId>
+          <version>2.5.8</version>
+      </dependency>
+
       <!-- https://mvnrepository.com/artifact/commons-cli/commons-cli -->
       <dependency>
           <groupId>commons-cli</groupId>
@@ -53,6 +60,7 @@
 
     <build>
 		<plugins>
+
 			<plugin>
     			<groupId>org.apache.maven.plugins</groupId>
     			<artifactId>maven-assembly-plugin</artifactId>
@@ -94,7 +102,7 @@
                             <archive>
                                 <manifest>
                                     <mainClass>
-                                        sag.teacher.Agent
+                                        sag.teacher.Teacher
                                     </mainClass>
                                 </manifest>
                             </archive>
@@ -102,6 +110,8 @@
                     </execution>
     			</executions>
 			</plugin>
+
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -136,6 +146,8 @@
                     </execution>
                 </executions>
             </plugin>
+
+
 		</plugins>
 	</build>
   

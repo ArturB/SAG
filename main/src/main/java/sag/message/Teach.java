@@ -1,11 +1,14 @@
 package sag.message;
 
+import java.io.Serializable;
+
 /**
  * Komunikat wysyłany do nauczyciela. Zawiera zlecenie wykonania uczenia przez określonego adresem agenta.
  */
-public class Teach {
+public class Teach implements Serializable {
     private String agentPath;
     private Learn learnTask;
+    private static final long serialVersionUID = 594059395443953L;
 
     /**
      *
