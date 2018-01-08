@@ -11,14 +11,17 @@ import sag.message.Response;
 public class Agent extends AbstractActor {
 
     private String serverPath;
+    private Boolean showBayes, showLogistics;
     private final LoggingAdapter log = Logging.getLogger(getContext().getSystem(), this);
 
-    static Props props(String serverPath) {
-        return Props.create(sag.requester.Agent.class, () -> new sag.requester.Agent(serverPath));
+    static Props props(String serverPath, Boolean showBayes, Boolean showLogistics) {
+        return Props.create(sag.requester.Agent.class, () -> new sag.requester.Agent(serverPath, showBayes, showLogistics));
     }
 
-    public Agent(String serverPath) {
+    public Agent(String serverPath, Boolean showBayes, Boolean showLogistics) {
         this.serverPath = serverPath;
+        this.showBayes = showBayes;
+        this.showLogistics = showLogistics;
     }
 
     public String getServerPath() {
@@ -40,8 +43,12 @@ public class Agent extends AbstractActor {
         rbuilder.match(Response.class, response -> {
             System.out.println("Classifier response: ");
             System.out.println("    - Class name: " + response.getClassName());
-            System.out.println("    - Bayes probability: " + response.getBayesProb());
-            System.out.println("    - Logistic probability: " + response.getLogisticProb());
+            if(showBayes) {
+                System.out.println("    - Bayes probability: " + response.getBayesProb());
+            }
+            if(showLogistics) {
+                System.out.println("    - Logistic probability: " + response.getLogisticProb());
+            }
             System.out.println("");
         });
 

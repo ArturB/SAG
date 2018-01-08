@@ -22,6 +22,10 @@ public class Requester {
         opts.addOption("g", "server-agent-name", true, "Server agent name. Defaults to /user/$a. ");
         opts.addOption("cv", true, "Path to text file with CV to classify.");
         opts.addOption("t", "timeout", true, "Time to wait for classifiers responses, in milliseconds. Defaults to 2000 (2s). ");
+
+        opts.addOption("bayes", false, "Show only Bayes-based predictions. ");
+        opts.addOption("logistic", false, "Show only logistic regression - based predictions. ");
+
         opts.addOption("h", "help", false, "Show this help");
 
         // Parsuj argumenty CLI
@@ -42,6 +46,8 @@ public class Requester {
             String serverPort = "5150";
             String serverSystemName = "ClassifiersSystem";
             String serverAgent = "/user/$a";
+            Boolean showBayes = true;
+            Boolean showLogistic = true;
             int timeout = 2000;
             if (cmd.hasOption("s")) {
                 serverIP = cmd.getOptionValue("s");
@@ -58,12 +64,20 @@ public class Requester {
             if(cmd.hasOption("t")) {
                 timeout = Integer.parseInt(cmd.getOptionValue("t"));
             }
+            if(cmd.hasOption("bayes") && !cmd.hasOption("logistic")) {
+                showLogistic = false;
+            }
+            if(!cmd.hasOption("bayes") && cmd.hasOption("logistic")) {
+                showBayes = false;
+            }
+
+
             String remotePath = "akka.tcp://" + serverSystemName + "@" + serverIP + ":" + serverPort + serverAgent;
 
             String cv = new String(Files.readAllBytes(Paths.get(cmd.getOptionValue("cv"))));
 
             ActorSystem system = ActorSystem.create("RequesterSystem", ConfigFactory.load("requester"));
-            ActorRef requester = system.actorOf(sag.requester.Agent.props(remotePath));
+            ActorRef requester = system.actorOf(sag.requester.Agent.props(remotePath, showBayes, showLogistic));
             requester.tell(new Request(cv, requester), null);
 
             Thread.sleep(timeout);
