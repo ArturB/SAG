@@ -1,8 +1,10 @@
-package sag.classifier;
+package sag;
 
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
+import akka.event.Logging;
+import akka.event.LoggingAdapter;
 import com.typesafe.config.ConfigFactory;
 import org.apache.commons.cli.*;
 
@@ -18,8 +20,7 @@ public class Launcher {
     public static void main( String[] args )
     {
         ActorSystem.create("ClassifiersSystem", ConfigFactory.load("launcher"));
-        System.out.println("Started classifers system!");
-
+        System.out.println("\n[SUCCESS] Started classifers system!");
     }
 
 }

@@ -53,18 +53,19 @@
           <version>1.4</version>
       </dependency>
 
-
-
   </dependencies>
 
 
     <build>
 		<plugins>
 
+            <!-- Generate self-contained JARs -->
 			<plugin>
     			<groupId>org.apache.maven.plugins</groupId>
     			<artifactId>maven-assembly-plugin</artifactId>
     			<executions>
+
+                    <!-- launcher.jar -->
         			<execution>
                         <id>sag-launcher</id>
             			<phase>package</phase>
@@ -81,12 +82,14 @@
 							<archive>
 								<manifest>
 									<mainClass>
-                                        sag.classifier.Launcher
+                                        sag.Launcher
                                     </mainClass>
 								</manifest>
 							</archive>
             			</configuration>
         			</execution>
+
+                    <!-- teacher.jar -->
                     <execution>
                         <id>sag-teacher</id>
                         <phase>package</phase>
@@ -108,9 +111,31 @@
                             </archive>
                         </configuration>
                     </execution>
+
+                    <!-- requester.jar -->
+                    <execution>
+                        <id>sag-requester</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <configuration>
+                            <finalName>requester</finalName>
+                            <appendAssemblyId>false</appendAssemblyId>
+                            <descriptorRefs>
+                                <descriptorRef>jar-with-dependencies</descriptorRef>
+                            </descriptorRefs>
+                            <archive>
+                                <manifest>
+                                    <mainClass>
+                                        sag.requester.Requester
+                                    </mainClass>
+                                </manifest>
+                            </archive>
+                        </configuration>
+                    </execution>
     			</executions>
 			</plugin>
-
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -120,13 +145,17 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+
+            <!-- Generate Windows binaries -->
             <plugin>
                 <groupId>com.akathist.maven.plugins.launch4j</groupId>
                 <artifactId>launch4j-maven-plugin</artifactId>
                 <executions>
+
+                    <!-- launcher.exe -->
                     <execution>
                         <id>launcher-win</id>
-                        <phase>package</phase>
+                        <phase>install</phase>
                         <goals><goal>launch4j</goal></goals>
                         <configuration>
                             <headerType>console</headerType>
@@ -134,7 +163,28 @@
                             <jar>target/launcher.jar</jar>
                             <errTitle>SAG System Launcher</errTitle>
                             <classPath>
-                                <mainClass>sag.classifier.Launcher</mainClass>
+                                <mainClass>sag.Launcher</mainClass>
+                                <addDependencies>true</addDependencies>
+                                <preCp>anything</preCp>
+                            </classPath>
+                            <jre>
+                                <minVersion>1.8.0</minVersion>
+                            </jre>
+                        </configuration>
+                    </execution>
+
+                    <!-- teacher.exe -->
+                    <execution>
+                        <id>teacher-win</id>
+                        <phase>install</phase>
+                        <goals><goal>launch4j</goal></goals>
+                        <configuration>
+                            <headerType>console</headerType>
+                            <outfile>target/teacher.exe</outfile>
+                            <jar>target/teacher.jar</jar>
+                            <errTitle>SAG Classifiers Teacher</errTitle>
+                            <classPath>
+                                <mainClass>sag.teacher.Teacher</mainClass>
                                 <addDependencies>true</addDependencies>
                                 <preCp>anything</preCp>
                             </classPath>
@@ -144,6 +194,30 @@
 
                         </configuration>
                     </execution>
+
+                    <!-- requester.exe -->
+                    <execution>
+                        <id>requester-win</id>
+                        <phase>install</phase>
+                        <goals><goal>launch4j</goal></goals>
+                        <configuration>
+                            <headerType>console</headerType>
+                            <outfile>target/requester.exe</outfile>
+                            <jar>target/requester.jar</jar>
+                            <errTitle>SAG System Requester</errTitle>
+                            <classPath>
+                                <mainClass>sag.requester.Requester</mainClass>
+                                <addDependencies>true</addDependencies>
+                                <preCp>anything</preCp>
+                            </classPath>
+                            <jre>
+                                <minVersion>1.8.0</minVersion>
+                            </jre>
+
+                        </configuration>
+                    </execution>
+
+
                 </executions>
             </plugin>
 

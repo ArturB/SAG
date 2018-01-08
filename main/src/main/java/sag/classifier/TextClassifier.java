@@ -27,7 +27,7 @@ import weka.core.SerializationHelper;
  */
 public class TextClassifier
 {
-	public static void main(String[] args)
+	/*public static void main(String[] args)
 	{
 		TextToVector conv = new TextToVector();
 		conv.setStemmer(null);
@@ -48,7 +48,7 @@ public class TextClassifier
 		{
 			e.printStackTrace();
 		}
-	}
+	}*/
 	
 	private AbstractClassifier m_classifier;
 	private TrainingSet m_trainingSet;
