@@ -3,9 +3,13 @@ package sag.teacher;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
+import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
+import com.typesafe.config.ConfigObject;
 import org.apache.commons.cli.*;
 import sag.message.Learn;
+
+import java.io.File;
 
 /**
  * Program pozwalający zlecać klasyfikatorom zdania uczenia się.
@@ -15,10 +19,11 @@ public class Teacher {
         // Lista obsługiwanych parametrów CLI
         DefaultParser parser = new DefaultParser();
         Options opts = new Options();
-        opts.addOption("c", "class-name", true, "SID of agent to teach");
-        opts.addOption("w", "word-limit", true, "SID of agent to teach");
-        opts.addOption("p", "positive-examples", true, "Path to directory including POSITIVE class examples");
-        opts.addOption("n", "megative-examples", true, "Path to directory including NEGATIVE class examples");
+        opts.addOption("s", "server-address", true, "IP Address of the system server. Dafaults to loopback 127.0.0.1. ");
+        opts.addOption("p", "server-port", true, "Listening port of system server. Defaults to 5150. ");
+        opts.addOption("n", "server-system-name", true, "Name of remote ActorSystem of the system server. Defaults to ClassifiersSystem");
+        opts.addOption("g", "server-agent-name", true, "Server agent name. Defaults to /user/$a. ");
+        opts.addOption("l", "classifiers-list", true, "Path to file with list of classifiers.");
         opts.addOption("h", "help", false, "Show this help");
 
         // Parsuj argumenty CLI
@@ -27,30 +32,45 @@ public class Teacher {
             // PRINT HELP
             if(cmd.hasOption("h")) {
                 HelpFormatter formatter = new HelpFormatter();
-                formatter.printHelp( "sag-launcher", opts, true );
+                formatter.printHelp( "teacher", opts, true );
                 System.exit(0);
             }
-            // CHECK IF ALL NECESSARY PARAMETERS ARE PASSED
-            if(!cmd.hasOption("c") ||
-               !cmd.hasOption("w") ||
-               !cmd.hasOption("p") ||
-               !cmd.hasOption("n")
-                    ) {
+            if(!cmd.hasOption("l")) {
                 HelpFormatter formatter = new HelpFormatter();
-                formatter.printHelp( "sag-launcher", opts, true );
+                formatter.printHelp( "teacher", opts, true );
                 System.exit(-1);
             }
+            String serverIP = "127.0.0.1";
+            String serverPort = "5150";
+            String serverSystemName = "ClassifiersSystem";
+            String serverAgent = "/user/$a";
+            if(cmd.hasOption("s")) {
+                serverIP = cmd.getOptionValue("s");
+            }
+            if(cmd.hasOption("p")) {
+                serverPort = cmd.getOptionValue("p");
+            }
+            if(cmd.hasOption("n")) {
+                serverSystemName = cmd.getOptionValue("n");
+            }
+            if(cmd.hasOption("g")) {
+                serverAgent = cmd.getOptionValue("g");
+            }
+            String remotePath = "akka.tcp://" + serverSystemName + "@" + serverIP + ":" + serverPort + serverAgent;
 
-            // utwórz nauczyciela i wyślij zlecenie uczenia
+            // parse HOCON classifiers list file
+            Config list = ConfigFactory.parseFile(new File(cmd.getOptionValue("l"))).resolve();
             ActorSystem system = ActorSystem.create("TeacherSystem", ConfigFactory.load("teacher"));
-            ActorRef teacher = system.actorOf(sag.teacher.Agent.props(), "teacher");
-            teacher.tell(new Learn(
-                    cmd.getOptionValue("c"),
-                    cmd.getOptionValue("p"),
-                    cmd.getOptionValue("n"),
-                    Integer.parseInt(cmd.getOptionValue("w"))
-            ), null);
-
+            ActorRef teacher = system.actorOf(sag.teacher.Agent.props(remotePath), "teacher");
+            for(ConfigObject o : list.getObjectList("classifiers.list")) {
+                Config classifier = o.toConfig().resolveWith(list);
+                teacher.tell(new Learn(
+                        classifier.getString("class"),
+                        classifier.getString("positive-examples"),
+                        classifier.getString("negative-examples"),
+                        classifier.getInt("word-limit")
+                ), null);
+            }
         }
         catch(ParseException e) {
             System.out.println("Unknown option!");

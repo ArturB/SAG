@@ -14,46 +14,55 @@ import sag.message.*;
  */
 public class Agent extends AbstractActor {
 
+    private String serverPath;
     private final LoggingAdapter log = Logging.getLogger(getContext().getSystem(), this);
 
     /**
+     * Simple constructor.
+     * @param serverPath ścieżka do serwera systemu.
+     */
+    public Agent(String serverPath) {
+        this.serverPath = serverPath;
+    }
+
+    /**
      * Generator of actor.
+     * @param serverPath ścieżka do serwera systemu.
      * @return
      */
-    static Props props() {
-        return Props.create(sag.teacher.Agent.class, () -> new sag.teacher.Agent());
+    static Props props(String serverPath) {
+        return Props.create(sag.teacher.Agent.class, () -> new sag.teacher.Agent(serverPath));
     }
 
     /**
      * Prztwarzanie komunikatów:
-     * {@link sag.message.Teach} - zleć określonemu klasyfikatorowi zadanie uczenia się.
+     * {@link sag.message.Learn} - zleć określonemu klasyfikatorowi zadanie uczenia się.
      * {@link sag.message.LearnReply} - wypisz na stdout wynik uczenia.
      * @return Receiver komunikatów.
      */
     public Receive createReceive() {
         ReceiveBuilder rbuilder = ReceiveBuilder.create();
 
-        // TEACH
+        // LEARN
         rbuilder.match(Learn.class, learn -> {
             ActorRef classifier = getContext().actorOf(sag.classifier.Agent.props(learn.getClassName()));
             classifier.tell(learn, getSelf());
-            System.out.println("Created classifier " + classifier.path().toString());
         });
 
         // LEARN-REPLY
         rbuilder.match(LearnReply.class, reply -> {
             if(reply.getSuccess()) {
-                System.out.println("Agent " + getSender().path() + " successfully learned!");
-                getContext().stop(getSelf());
+                getContext().actorSelection(serverPath).tell(new NewClassifier(getSender().path().toStringWithoutAddress()), getSelf());
+                log.info("[SUCCESS] Agent " + getSender().path() + " successfully created and learned!");
             }
             else {
-                System.out.println("Agent " + getSender().path() + " learning error: " + reply.getMsg());
+                log.error("Agent " + getSender().path() + " learning error: " + reply.getMsg());
             }
 
         });
 
         // DEFAULT
-        rbuilder.matchAny(o -> log.info("Unknown message type!"));
+        rbuilder.matchAny(o -> log.info(getSelf().path().toString() + " - unknown message type " + o.getClass().getCanonicalName()));
 
         return rbuilder.build();
     }

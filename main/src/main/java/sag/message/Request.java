@@ -1,5 +1,7 @@
 package sag.message;
 
+import akka.actor.ActorRef;
+
 import java.io.Serializable;
 
 /**
@@ -7,12 +9,17 @@ import java.io.Serializable;
  */
 public class Request implements Serializable {
     private String textToClassify;
+    private ActorRef requester;
     private static final long serialVersionUID = 3294930483453252345L;
 
     /**
-     * @param textToClassify Tekst do sklasyfikowania w formie prostego Stringa.
+     * Simple constructor.
+     * @param textToClassify CV do sklasyfikowania w formie prostego stringa.
+     * @param requester Requester. Tu zostanie wysłana odpowiedź na zapytanie.
      */
-    public Request(String textToClassify) throws Exception {
+    public Request(String textToClassify, ActorRef requester) {
+        this.textToClassify = textToClassify;
+        this.requester = requester;
     }
 
     public String getTextToClassify() {
@@ -23,4 +30,11 @@ public class Request implements Serializable {
         this.textToClassify = textToClassify;
     }
 
+    public ActorRef getRequester() {
+        return requester;
+    }
+
+    public void setRequester(ActorRef requester) {
+        this.requester = requester;
+    }
 }

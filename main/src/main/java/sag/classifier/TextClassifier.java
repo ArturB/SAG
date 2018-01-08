@@ -65,7 +65,7 @@ public class TextClassifier
 	 */
 	public TextClassifier(TrainingSet trainingSet, AbstractClassifier classifier) throws WekaException
 	{
-		Instances dataset = m_trainingSet.getDataset();
+		Instances dataset = trainingSet.getDataset();
 		
 		if(dataset.numInstances() == 0)
 			throw new IllegalArgumentException("training set must have at least one word vector");

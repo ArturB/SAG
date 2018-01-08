@@ -1,4 +1,4 @@
-package sag;
+package sag.server;
 
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
@@ -19,8 +19,8 @@ public class Launcher {
      */
     public static void main( String[] args )
     {
-        ActorSystem.create("ClassifiersSystem", ConfigFactory.load("launcher"));
-        System.out.println("\n[SUCCESS] Started classifers system!");
+        ActorSystem system = ActorSystem.create("ClassifiersSystem", ConfigFactory.load("launcher"));
+        system.actorOf(sag.server.Agent.props());
     }
 
 }

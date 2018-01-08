@@ -88,7 +88,7 @@ public class Agent extends AbstractActor {
             String positiveExamplesPath,
             String negativeExamplesPath,
             int wordLimit
-    ) throws Exception {
+    ) throws IOException, WekaException {
 
         File positiveExamplesDir, negativeExamplesDir;
         StructureBuilder sbuilder = new StructureBuilder();
@@ -142,7 +142,8 @@ public class Agent extends AbstractActor {
             Instance cv = new TextToVector().convert(request.getTextToClassify());
             double bayesProb = classifierBayes.classifyInstance(cv);
             double logisticProb = classifierLogistic.classifyInstance(cv);
-            getSender().tell(new Response(bayesProb, logisticProb, className), getSelf());
+            request.getRequester().tell(new Response(bayesProb, logisticProb, className), getSelf());
+            log.info("Classification request received from " + getSender().path().toString() + ". Reply sent. ");
         });
 
         // LEARN - naucz klasyfikatory
@@ -157,13 +158,13 @@ public class Agent extends AbstractActor {
             catch(IOException ioe) {
                 getSender().tell(new LearnReply(false, "Invalid data path"), getSelf());
             }
-            catch(Exception e) {
+            catch(WekaException e) {
                 getSender().tell(new LearnReply(false, e.getMessage()), getSelf());
             }
         });
 
         // DEFAULT
-        rbuilder.matchAny(o -> log.info("Unknown message type!"));
+        rbuilder.matchAny(o -> log.info(getSelf().path().toString() + " - unknown message type " + o.getClass().getCanonicalName()));
 
         return rbuilder.build();
     }
