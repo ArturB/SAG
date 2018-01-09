@@ -50,9 +50,14 @@ public class Agent extends AbstractActor {
         });
 
         rbuilder.match(Request.class, request -> {
-           for(ActorRef cp : classifiers) {
-               cp.tell(request, getSelf());
-           }
+            if(classifiers.isEmpty()) {
+                getSender().tell(new NoAgents(), getSelf());
+            }
+            else {
+                for(ActorRef cp : classifiers) {
+                    cp.tell(request, getSelf());
+                }
+            }
         });
 
         rbuilder.match(Response.class, response -> {

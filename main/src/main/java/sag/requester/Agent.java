@@ -6,6 +6,7 @@ import akka.event.Logging;
 import akka.event.LoggingAdapter;
 import akka.japi.pf.ReceiveBuilder;
 import sag.message.Aggregate;
+import sag.message.NoAgents;
 import sag.message.Request;
 import sag.message.Response;
 
@@ -131,6 +132,11 @@ public class Agent extends AbstractActor {
         rbuilder.match(Aggregate.class, a -> {
             System.out.println("\n\n###########\n# Summary #\n###########\n");
             System.out.println("  - Maximum likelihood class: " + maximumLikelihoodClass + " with probability = " + df.format(maximumProb) + "\n\n");
+        });
+
+        rbuilder.match(NoAgents.class, a -> {
+            System.out.println("\n\n###########\n# Summary #\n###########\n");
+            System.out.println("  Actually, there are no agents running in the system!\n\n");
         });
 
         // DEFAULT
