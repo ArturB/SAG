@@ -137,7 +137,9 @@ public class Agent extends AbstractActor {
         rbuilder.match(NoAgents.class, a -> {
             System.out.println("\n\n###########\n# Summary #\n###########\n");
             System.out.println("  Actually, there are no agents running in the system!\n\n");
+            getContext().stop(getSelf());
         });
+
 
         // DEFAULT
         rbuilder.matchAny(o -> log.info(getSelf().path().toString() + " - unknown message type " + o.getClass().getCanonicalName()));

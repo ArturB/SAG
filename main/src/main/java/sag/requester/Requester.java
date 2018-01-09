@@ -74,7 +74,7 @@ public class Requester {
             }
             Boolean showBayes = true;
             Boolean showLogistic = true;
-            int timeout = 2000;
+            int timeout = 1000;
             if (cmd.hasOption("s")) {
                 serverIP = cmd.getOptionValue("s");
             }
