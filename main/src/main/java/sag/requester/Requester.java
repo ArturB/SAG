@@ -7,6 +7,7 @@ import com.typesafe.config.ConfigFactory;
 import org.apache.commons.cli.*;
 import sag.message.Aggregate;
 import sag.message.Request;
+import scala.Int;
 
 import java.io.File;
 import java.io.IOException;
@@ -42,6 +43,7 @@ public class Requester {
         String serverPort = "5150";
         String serverSystemName = "ClassifiersSystem";
         String serverAgent = "/user/$a";
+        int timeout = 4000;
 
         Config cfg2 = ConfigFactory.parseFile(new File("netty.conf"));
         if(cfg2.hasPath("akka.remote.netty.tcp.hostname")) {
@@ -55,6 +57,9 @@ public class Requester {
         }
         if(cfg2.hasPath("akka.remote.netty.tcp.agent-name")) {
             serverAgent = cfg2.getString("akka.remote.netty.tcp.agent-name");
+        }
+        if(cfg2.hasPath("akka.remote.netty.tcp.timeout")) {
+            timeout = cfg2.getInt("akka.remote.netty.tcp.timeout");
         }
 
 
@@ -74,7 +79,6 @@ public class Requester {
             }
             Boolean showBayes = true;
             Boolean showLogistic = true;
-            int timeout = 1000;
             if (cmd.hasOption("s")) {
                 serverIP = cmd.getOptionValue("s");
             }
@@ -100,29 +104,46 @@ public class Requester {
 
             String remotePath = "akka.tcp://" + serverSystemName + "@" + serverIP + ":" + serverPort + serverAgent;
 
-            String cv = new String(Files.readAllBytes(Paths.get(cmd.getOptionValue("cv"))));
-
             Config cfg = ConfigFactory.load("requester");
-            ActorSystem system = ActorSystem.create("RequesterSystem", cfg);
+            Config cfg3 = cfg2.withFallback(cfg);
+            ActorSystem system = ActorSystem.create("RequesterSystem", cfg3);
 
             ActorRef requester = system.actorOf(sag.requester.Agent.props(timeout, remotePath, showBayes, showLogistic));
-            requester.tell(new Request(cv, requester), null);
 
-            Thread.sleep(timeout);
-            requester.tell(new Aggregate(), null);
+            File cvfile = new File(cmd.getOptionValue("cv"));
+            if(cvfile.isDirectory()) {
+                for(File cv : cvfile.listFiles()) {
+                    if(cv.isFile()) {
+                        classifyCV(cv, requester, timeout);
+                    }
+                }
+            }
+            else {
+                classifyCV(cvfile, requester, timeout);
+            }
+
             system.terminate();
-
 
         } catch(ParseException pe) {
             System.out.println("Unknown option!");
         }
-        catch(IOException ioe) {
+    }
+
+    public static void classifyCV(File path, ActorRef requester, int timeout) {
+        try {
+            System.out.println("\nClassifying document " + path.getPath() + "...\n");
+            String cv = new String(Files.readAllBytes(path.toPath()));
+            requester.tell(new Request(cv, requester), null);
+            Thread.sleep(timeout);
+            requester.tell(new Aggregate(), null);
+            Thread.sleep(timeout / 8);
+            System.out.println("_______________________________________________________\n");
+        }
+        catch(IOException e) {
             System.out.println("Invalid CV file path!");
         }
-        catch(InterruptedException e) {
-            e.printStackTrace();
+        catch(InterruptedException ie) {
+            ie.printStackTrace();
         }
-
-
     }
 }

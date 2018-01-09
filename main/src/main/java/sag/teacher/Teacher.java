@@ -78,9 +78,13 @@ public class Teacher {
 
             // parse HOCON classifiers list file
             Config list = ConfigFactory.parseFile(new File(cmd.getOptionValue("l"))).resolve();
-
             Config cfg = ConfigFactory.load("teacher");
-            ActorSystem system = ActorSystem.create("TeacherSystem", cfg);
+            Config cfg3 = cfg2.withFallback(cfg);
+
+            //System.out.println(cfg3.getString("akka.remote.netty.tcp.bind-hostname"));
+            //System.out.println(cfg3.getString("akka.remote.netty.tcp.bind-port"));
+
+            ActorSystem system = ActorSystem.create("TeacherSystem", cfg3);
 
             teacher = system.actorOf(sag.teacher.Agent.props(remotePath), "teacher");
             for(ConfigObject o : list.getObjectList("classifiers.list")) {
