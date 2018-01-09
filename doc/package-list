@@ -1,6 +1,6 @@
-sagwedt.classifier
-sagwedt.fx
-sagwedt.main
-sagwedt.message
-sagwedt.requester
-sagwedt.teacher
+sag.classifier
+sag.main
+sag.message
+sag.requester
+sag.server
+sag.teacher
