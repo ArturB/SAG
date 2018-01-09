@@ -10,9 +10,9 @@ public class LearnReply implements Serializable {
     private String msg;
     private static final long serialVersionUID = 48309483980520L;
 
-    /**
+    /** Simple constructor.
      * @param success Czy uczenie zakończono sukcesem?
-     * @param msg Jeśli nie, komunikat o przyczynie błędu.
+     * @param msg Jeśli nie, podaj komunikat o przyczynie błędu.
      */
     public LearnReply(Boolean success, String msg) {
         this.success = success;

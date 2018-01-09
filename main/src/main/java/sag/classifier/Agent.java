@@ -34,8 +34,8 @@ public class Agent extends AbstractActor {
     }
 
     /**
-     * Generator of actor.
-     * @param className Nazwa analizowanej klasy.
+     * Generator klasyfikatora jako aktora Akki {@link Props}.
+     * @param className Nazwa analizowanej przez klasyfikator klasy.
      * @return
      */
     static public Props props(String className) {
@@ -62,19 +62,6 @@ public class Agent extends AbstractActor {
         return converter.convert(new String(
                 Files.readAllBytes(Paths.get(plik.getPath()))
         ));
-    }
-
-    /**
-     * Uczy agenta na podstawie zbioru plików CV z zadanego katalogu. Jeżeli agent był już wcześniej czegoś uczony, to do już posiadanej bazy wiedzy dodawane są nowe dane. Stosuje domyślny limit słow 1000.
-     * @param positiveExamplesPath Katalog z przykładami CV należących do klasy.
-     * @param negativeExamplesPath Katalog z przykładami CV nienależących do klasy.
-     * @throws Exception Któraś z podanych ścieżek jest niepoprawna.
-     */
-    public void learnFromDirectory (
-            String positiveExamplesPath,
-            String negativeExamplesPath
-    ) throws Exception {
-        learnFromDirectory(positiveExamplesPath, negativeExamplesPath, 1000);
     }
 
     /**
@@ -126,7 +113,7 @@ public class Agent extends AbstractActor {
     /**
      * Obsługa komunikatów:
      * {@link sag.message.Request} - wykonaj zadanie klasyfikacji na podanym w komunikacie CV i odeślij odpowiedź {@link sag.message.Response}
-     * {@link sag.message.Learn} - wykonaj uzenie klasyfikatorów na zadanym zbiorze danych.
+     * {@link sag.message.Learn} - wykonaj uczenie klasyfikatorów na zadanym zbiorze danych.
      * @return Receiver komunikatów.
      */
     @Override
@@ -135,10 +122,6 @@ public class Agent extends AbstractActor {
 
         // REQUEST - wykonaj klasyfikcję
         rbuilder.match(Request.class, request -> {
-            if (classifierBayes == null || classifierLogistic == null) {
-                getSender().tell(new Untrained(className), getSelf());
-            }
-
             Instance cv = new TextToVector().convert(request.getTextToClassify());
             double bayesProb = classifierBayes.classifyInstance(cv);
             double logisticProb = classifierLogistic.classifyInstance(cv);
@@ -157,9 +140,11 @@ public class Agent extends AbstractActor {
             }
             catch(IOException ioe) {
                 getSender().tell(new LearnReply(false, "Invalid data path"), getSelf());
+                getContext().stop(getSelf());
             }
             catch(WekaException e) {
                 getSender().tell(new LearnReply(false, e.getMessage()), getSelf());
+                getContext().stop(getSelf());
             }
         });
 

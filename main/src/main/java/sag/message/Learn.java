@@ -3,7 +3,7 @@ package sag.message;
 import java.io.Serializable;
 
 /**
- * Komunikat wysyłany przez nauczyciela do klasyfikatora. Zawiera lokalizację danych, na podstawie których klasyfikator wykonuje uczenie.
+ * Komunikat wysyłany przez nauczyciela do klasyfikatora. Zawiera ścieżki do zbiorów danych, na podstawie których klasyfikator wykonuje uczenie.
  */
 public class Learn implements Serializable {
     private String className;

@@ -9,13 +9,13 @@ import com.typesafe.config.ConfigFactory;
 import org.apache.commons.cli.*;
 
 /**
- * Program uruchamiający zadaną liczbę klasyfikatorów w systemie.
+ * Program uruchamiający serwer systemu SAG. Serwer zbiera informacje nt. uruchomionych w systemie klasyfikatorów oraz przyjmuje zapytania od requesterów i rozsyła je do klasyfikatorów.
  */
 public class Launcher {
 
     /**
-     * Entry point.
-     * @param args Command-line parametrs.
+     * Server entry point.
+     * @param args Parametry CLI.
      */
     public static void main( String[] args )
     {

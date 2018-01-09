@@ -3,14 +3,17 @@ package sag.message;
 import java.io.Serializable;
 
 /**
- * Komunikato wysyłany przez teachera po utworzeniu klasyfikatora. Wysyłany jest na serwer i zawiera adres utworzonego klasyfikatora.
+ * Komunikat wysyłany przez teachera po utworzeniu i poprawnym nauczeniu klasyfikatora. Wysyłany jest na serwer i zawiera adres utworzonego klasyfikatora. Serwer zapisuje adres nowoutworzonego klasyfikatora do swojej listy.
  */
 public class NewClassifier implements Serializable {
-
 
     private String path;
     private static final long serialVersionUID = 483094839800L;
 
+    /**
+     * Simple constructor.
+     * @param path Ścieżka (URI) nowoutworzonego klasyfikatora.
+     */
     public NewClassifier(String path) {
         this.path = path;
     }

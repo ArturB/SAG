@@ -10,8 +10,15 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+/**
+ * Program wysyłający do serwera zlecenia klasyfikacji CV.
+ */
 public class Requester {
 
+    /**
+     * Requester entry point.
+     * @param args Parametry CLI.
+     */
     public static void main(String[] args) {
         // Lista obsługiwanych parametrów CLI
         DefaultParser parser = new DefaultParser();
@@ -77,7 +84,7 @@ public class Requester {
             String cv = new String(Files.readAllBytes(Paths.get(cmd.getOptionValue("cv"))));
 
             ActorSystem system = ActorSystem.create("RequesterSystem", ConfigFactory.load("requester"));
-            ActorRef requester = system.actorOf(sag.requester.Agent.props(remotePath, showBayes, showLogistic));
+            ActorRef requester = system.actorOf(sag.requester.Agent.props(timeout, remotePath, showBayes, showLogistic));
             requester.tell(new Request(cv, requester), null);
 
             Thread.sleep(timeout);

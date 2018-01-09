@@ -10,7 +10,7 @@ import akka.japi.pf.ReceiveBuilder;
 import sag.message.*;
 
 /**
- * Agent zlecający klasyfikatorom zdania uczenia się.
+ * Agent programu teacher. Jego zadaniem jest tworzenie i uczenie klasyfikatorów na podstawie danych wczytanych przez Teacher z plikow. Klasyfikatory tworzone są zawsze na maszynie, na której uruchomiony został Teacher, a następnie rejestrowane przez sieć na serwerze. Tak utworzone klasyfikatory przyjmują następnie z sieci zlecenia, wykonują zapytania na lokalnej maszynie i odsyłają wyniki do requesterów.
  */
 public class Agent extends AbstractActor {
 

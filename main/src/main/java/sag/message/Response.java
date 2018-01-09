@@ -3,8 +3,7 @@ package sag.message;
 import java.io.Serializable;
 
 /**
- * Odpowiedź klasyfikatora za zadanie klasyfikacji tekstu. Zawiera wyznaczone przez klasyfikator prawdopodobieństwo należenia sklasyfikowanego tekstu do obsługiwanej przez klasyfikator klasy. .
- * Wysyłany tylko przez klasyfikatory już nauczone oczekiwanej klasy.
+ * Odpowiedź klasyfikatora za zadanie klasyfikacji tekstu. Zawiera wyznaczone przez klasyfikator prawdopodobieństwo należenia sklasyfikowanego tekstu do obsługiwanej przez klasyfikator klasy. Wysyłana przez klasyfikator bezpośrednio do requestera.
  */
 public class Response implements Serializable {
     private double bayesProb;

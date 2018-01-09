@@ -1,7 +1,6 @@
 package sag.server;
 
 import akka.actor.AbstractActor;
-import akka.actor.ActorRef;
 import akka.actor.Props;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
@@ -10,6 +9,9 @@ import sag.message.*;
 
 import java.util.LinkedList;
 
+/**
+ * Agent serwera systemu. Zbiera informacje nt. uruchomionych w systemie klasyfikatorów oraz przyjmuje zapytania od requesterów i rozsyła je do klasyfikatorów.
+ */
 public class Agent extends AbstractActor {
 
 
@@ -17,7 +19,7 @@ public class Agent extends AbstractActor {
     private final LoggingAdapter log = Logging.getLogger(getContext().getSystem(), this);
 
     /**
-     * Generator of actor.
+     * Generator agenta jako aktora Akki {@link Props}.
      * @return
      */
     static Props props() {
@@ -34,7 +36,7 @@ public class Agent extends AbstractActor {
 
     /**
      * Prztwarzanie komunikatów:
-     * {@link sag.message.NewClassifier} - dopisz nowo powołanego klasyfikatora do listy. .
+     * {@link sag.message.NewClassifier} - dopisz nowego klasyfikatora do listy. .
      * {@link sag.message.Request} - zadaj wszystkim znanym klasyfikatorom zadanie sklasyfikowania CV.
      * @return Receiver komunikatów.
      */

@@ -12,7 +12,7 @@ import sag.message.Learn;
 import java.io.File;
 
 /**
- * Program pozwalający zlecać klasyfikatorom zdania uczenia się.
+ * Program tworzący i uczący klasyfikatory.
  */
 public class Teacher {
     public static void main(String[] args) {

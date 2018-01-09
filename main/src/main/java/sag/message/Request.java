@@ -5,7 +5,7 @@ import akka.actor.ActorRef;
 import java.io.Serializable;
 
 /**
- * Komunikat wysyłany przez Mastera do wszystkich klasyfikatorów, zawierający tekst do sklasyfikowania. Klasyfikator po otrzymaniu zlecenia wysyła odpowiedź albo {@link sag.message.Response} jeśli jest w stanie wykonać zadanie, albo {@link sag.message.Untrained} jeśli nie jest jeszcze nauczony.
+ * Komunikat wysyłany przez Requester, zawierający tekst do sklasyfikowania. Komunikat najpierw odbierany jest ptzez serwer i rozsyłany wszystkim zarejestrowanym klasyfikatorom. Klasyfikator po otrzymaniu zlecenia wysyła odpowiedź {@link sag.message.Response}.
  */
 public class Request implements Serializable {
     private String textToClassify;
@@ -15,7 +15,7 @@ public class Request implements Serializable {
     /**
      * Simple constructor.
      * @param textToClassify CV do sklasyfikowania w formie prostego stringa.
-     * @param requester Requester. Tu zostanie wysłana odpowiedź na zapytanie.
+     * @param requester Adres requestera. Tu zostanie wysłana odpowiedź na zapytanie.
      */
     public Request(String textToClassify, ActorRef requester) {
         this.textToClassify = textToClassify;
