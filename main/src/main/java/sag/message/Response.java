@@ -1,5 +1,7 @@
 package sag.message;
 
+import akka.actor.ActorRef;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.math.MathContext;
@@ -9,6 +11,7 @@ import java.math.RoundingMode;
  * Odpowiedź klasyfikatora za zadanie klasyfikacji tekstu. Zawiera wyznaczone przez klasyfikator prawdopodobieństwo należenia sklasyfikowanego tekstu do obsługiwanej przez klasyfikator klasy. Wysyłana przez klasyfikator bezpośrednio do requestera.
  */
 public class Response implements Serializable {
+    private ActorRef requester;
     private BigDecimal bayesProb;
     private BigDecimal logisticProb;
     private String className;
@@ -16,14 +19,16 @@ public class Response implements Serializable {
     private static final long serialVersionUID = 68539058435850385L;
 
     /**
+     * Simple constructor.
+     * @param requester Adres requestera. Tu serwer systemu przekaże odpowiedź.
      * @param bayesProb Prawdopodobieństwo obliczone metodą Bayesa.
      * @param logisticProb Prawdopodobieństwo obliczone metodą logistyczną.
      * @param className Nazwa analizowanej klasy.
      */
-    public Response(double bayesProb, double logisticProb, String className) {
-        MathContext mc = new MathContext(4, RoundingMode.HALF_EVEN);
-        this.bayesProb = new BigDecimal(bayesProb, mc);
-        this.logisticProb = new BigDecimal(logisticProb, mc);
+    public Response(ActorRef requester, BigDecimal bayesProb, BigDecimal logisticProb, String className) {
+        this.requester = requester;
+        this.bayesProb = bayesProb;
+        this.logisticProb = logisticProb;
         this.className = className;
     }
 
@@ -49,6 +54,14 @@ public class Response implements Serializable {
 
     public void setClassName(String className) throws Exception {
         this.className = className;
+    }
+
+    public ActorRef getRequester() {
+        return requester;
+    }
+
+    public void setRequester(ActorRef requester) {
+        this.requester = requester;
     }
 
     /**

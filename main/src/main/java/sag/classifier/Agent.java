@@ -9,6 +9,7 @@ import weka.core.Instance;
 
 import java.io.File;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.LinkedList;
@@ -123,9 +124,9 @@ public class Agent extends AbstractActor {
         // REQUEST - wykonaj klasyfikcję
         rbuilder.match(Request.class, request -> {
             Instance cv = new TextToVector().convert(request.getTextToClassify());
-            double bayesProb = classifierBayes.classifyInstance(cv);
-            double logisticProb = classifierLogistic.classifyInstance(cv);
-            request.getRequester().tell(new Response(bayesProb, logisticProb, className), getSelf());
+            BigDecimal bayesProb = new BigDecimal(classifierBayes.classifyInstance(cv));
+            BigDecimal logisticProb = new BigDecimal(classifierLogistic.classifyInstance(cv));
+            getSender().tell(new Response(request.getRequester(), bayesProb, logisticProb, className), getSelf());
             log.info("Classification request received from " + getSender().path().toString() + ". Reply sent. ");
         });
 

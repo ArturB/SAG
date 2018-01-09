@@ -53,7 +53,10 @@ public class Agent extends AbstractActor {
            for(String classpath : classifiers) {
                getContext().actorSelection(classpath).tell(request, getSelf());
            }
+        });
 
+        rbuilder.match(Response.class, response -> {
+           response.getRequester().tell(response, getSelf());
         });
 
         // DEFAULT
