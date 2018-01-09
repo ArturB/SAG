@@ -149,6 +149,10 @@ public class Agent extends AbstractActor {
             }
         });
 
+        rbuilder.match(DeleteClassifier.class, d -> {
+           getContext().stop(getSelf());
+        });
+
         // DEFAULT
         rbuilder.matchAny(o -> log.info(getSelf().path().toString() + " - unknown message type " + o.getClass().getCanonicalName()));
 

@@ -2,11 +2,13 @@ package sag.requester;
 
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
+import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
 import org.apache.commons.cli.*;
 import sag.message.Aggregate;
 import sag.message.Request;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -36,6 +38,26 @@ public class Requester {
 
         opts.addOption("h", "help", false, "Show this help");
 
+        String serverIP = "127.0.0.1";
+        String serverPort = "5150";
+        String serverSystemName = "ClassifiersSystem";
+        String serverAgent = "/user/$a";
+
+        Config cfg2 = ConfigFactory.parseFile(new File("netty.conf"));
+        if(cfg2.hasPath("akka.remote.netty.tcp.hostname")) {
+            serverIP = cfg2.getString("akka.remote.netty.tcp.hostname");
+        }
+        if (cfg2.hasPath("akka.remote.netty.tcp.port")) {
+            serverPort = cfg2.getString("akka.remote.netty.tcp.port");
+        }
+        if(cfg2.hasPath("akka.remote.netty.tcp.system-name")) {
+            serverSystemName = cfg2.getString("akka.remote.netty.tcp.system-name");
+        }
+        if(cfg2.hasPath("akka.remote.netty.tcp.agent-name")) {
+            serverAgent = cfg2.getString("akka.remote.netty.tcp.agent-name");
+        }
+
+
         // Parsuj argumenty CLI
         try {
             CommandLine cmd = parser.parse(opts, args);
@@ -50,10 +72,6 @@ public class Requester {
                 formatter.printHelp("teacher", opts, true);
                 System.exit(-1);
             }
-            String serverIP = "127.0.0.1";
-            String serverPort = "5150";
-            String serverSystemName = "ClassifiersSystem";
-            String serverAgent = "/user/$a";
             Boolean showBayes = true;
             Boolean showLogistic = true;
             int timeout = 2000;
@@ -84,7 +102,9 @@ public class Requester {
 
             String cv = new String(Files.readAllBytes(Paths.get(cmd.getOptionValue("cv"))));
 
-            ActorSystem system = ActorSystem.create("RequesterSystem", ConfigFactory.load("requester"));
+            Config cfg = ConfigFactory.load("requester");
+            ActorSystem system = ActorSystem.create("RequesterSystem", cfg);
+
             ActorRef requester = system.actorOf(sag.requester.Agent.props(timeout, remotePath, showBayes, showLogistic));
             requester.tell(new Request(cv, requester), null);
 

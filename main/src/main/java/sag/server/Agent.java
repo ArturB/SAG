@@ -1,6 +1,7 @@
 package sag.server;
 
 import akka.actor.AbstractActor;
+import akka.actor.ActorRef;
 import akka.actor.Props;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
@@ -15,7 +16,7 @@ import java.util.LinkedList;
 public class Agent extends AbstractActor {
 
 
-    LinkedList<String> classifiers;
+    LinkedList<ActorRef> classifiers;
     private final LoggingAdapter log = Logging.getLogger(getContext().getSystem(), this);
 
     /**
@@ -44,19 +45,23 @@ public class Agent extends AbstractActor {
         ReceiveBuilder rbuilder = ReceiveBuilder.create();
 
         rbuilder.match(NewClassifier.class, classifier -> {
-            String classifierPath = getSender().path().address().toString() + classifier.getPath();
-            classifiers.add(classifierPath);
-            log.info("New classifier added: " + classifierPath);
+            classifiers.add(classifier.getPath());
+            log.info("New classifier added: " + classifier.getPath());
         });
 
         rbuilder.match(Request.class, request -> {
-           for(String classpath : classifiers) {
-               getContext().actorSelection(classpath).tell(request, getSelf());
+           for(ActorRef cp : classifiers) {
+               cp.tell(request, getSelf());
            }
         });
 
         rbuilder.match(Response.class, response -> {
            response.getRequester().tell(response, getSelf());
+        });
+
+        rbuilder.match(DeleteClassifier.class, delete -> {
+           classifiers.remove(delete.getClassifier());
+           System.out.println("Removing classifier " + delete.getClassifier().path());
         });
 
         // DEFAULT

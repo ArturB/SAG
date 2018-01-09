@@ -1,5 +1,7 @@
 package sag.message;
 
+import akka.actor.ActorRef;
+
 import java.io.Serializable;
 
 /**
@@ -7,22 +9,22 @@ import java.io.Serializable;
  */
 public class NewClassifier implements Serializable {
 
-    private String path;
+    private ActorRef path;
     private static final long serialVersionUID = 483094839800L;
 
     /**
      * Simple constructor.
      * @param path Ścieżka (URI) nowoutworzonego klasyfikatora.
      */
-    public NewClassifier(String path) {
+    public NewClassifier(ActorRef path) {
         this.path = path;
     }
 
-    public String getPath() {
+    public ActorRef getPath() {
         return path;
     }
 
-    public void setPath(String path) {
+    public void setPath(ActorRef path) {
         this.path = path;
     }
 }

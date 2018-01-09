@@ -7,6 +7,7 @@ import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
 import com.typesafe.config.ConfigObject;
 import org.apache.commons.cli.*;
+import sag.message.DeleteClassifier;
 import sag.message.Learn;
 
 import java.io.File;
@@ -16,6 +17,8 @@ import java.io.File;
  */
 public class Teacher {
     public static void main(String[] args) {
+        ActorRef teacher;
+
         // Lista obsługiwanych parametrów CLI
         DefaultParser parser = new DefaultParser();
         Options opts = new Options();
@@ -25,6 +28,25 @@ public class Teacher {
         opts.addOption("g", "server-agent-name", true, "Server agent name. Defaults to /user/$a. ");
         opts.addOption("l", "classifiers-list", true, "Path to file with list of classifiers.");
         opts.addOption("h", "help", false, "Show this help");
+
+        String serverIP = "127.0.0.1";
+        String serverPort = "5150";
+        String serverSystemName = "ClassifiersSystem";
+        String serverAgent = "/user/$a";
+
+        Config cfg2 = ConfigFactory.parseFile(new File("netty.conf"));
+        if(cfg2.hasPath("akka.remote.netty.tcp.hostname")) {
+            serverIP = cfg2.getString("akka.remote.netty.tcp.hostname");
+        }
+        if (cfg2.hasPath("akka.remote.netty.tcp.port")) {
+            serverPort = cfg2.getString("akka.remote.netty.tcp.port");
+        }
+        if(cfg2.hasPath("akka.remote.netty.tcp.system-name")) {
+            serverSystemName = cfg2.getString("akka.remote.netty.tcp.system-name");
+        }
+        if(cfg2.hasPath("akka.remote.netty.tcp.agent-name")) {
+            serverAgent = cfg2.getString("akka.remote.netty.tcp.agent-name");
+        }
 
         // Parsuj argumenty CLI
         try {
@@ -40,10 +62,6 @@ public class Teacher {
                 formatter.printHelp( "teacher", opts, true );
                 System.exit(-1);
             }
-            String serverIP = "127.0.0.1";
-            String serverPort = "5150";
-            String serverSystemName = "ClassifiersSystem";
-            String serverAgent = "/user/$a";
             if(cmd.hasOption("s")) {
                 serverIP = cmd.getOptionValue("s");
             }
@@ -60,8 +78,11 @@ public class Teacher {
 
             // parse HOCON classifiers list file
             Config list = ConfigFactory.parseFile(new File(cmd.getOptionValue("l"))).resolve();
-            ActorSystem system = ActorSystem.create("TeacherSystem", ConfigFactory.load("teacher"));
-            ActorRef teacher = system.actorOf(sag.teacher.Agent.props(remotePath), "teacher");
+
+            Config cfg = ConfigFactory.load("teacher");
+            ActorSystem system = ActorSystem.create("TeacherSystem", cfg);
+
+            teacher = system.actorOf(sag.teacher.Agent.props(remotePath), "teacher");
             for(ConfigObject o : list.getObjectList("classifiers.list")) {
                 Config classifier = o.toConfig().resolveWith(list);
                 teacher.tell(new Learn(
@@ -71,9 +92,29 @@ public class Teacher {
                         classifier.getInt("word-limit")
                 ), null);
             }
+
+            //Ctrl+C Handler
+            Runtime.getRuntime().addShutdownHook(new Thread() {
+                public void run() {
+                    System.out.println("\n\nShutting system down...");
+                    teacher.tell(new DeleteClassifier(null), null);
+                    try {
+                        Thread.sleep(500);
+                    }
+                    catch(InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    system.terminate();
+                }
+            });
+
         }
         catch(ParseException e) {
             System.out.println("Unknown option!");
         }
+
     }
+
+
+
 }
