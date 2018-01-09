@@ -8,6 +8,7 @@ import akka.japi.pf.ReceiveBuilder;
 import sag.message.Request;
 import sag.message.Response;
 
+import java.text.DecimalFormat;
 import java.util.LinkedList;
 
 /**
@@ -18,9 +19,11 @@ public class Agent extends AbstractActor {
     private int timeout;
     private String serverPath;
     private Boolean showBayes, showLogistics;
+
     LinkedList<Response> replies;
-    private String maximumLikelihoodClass;
-    private double maximumProb;
+    //private LinkedList<String> maximumLikelihoodClass;
+    //private double maximumProb;
+
     private final LoggingAdapter log = Logging.getLogger(getContext().getSystem(), this);
 
     /**
@@ -50,8 +53,8 @@ public class Agent extends AbstractActor {
         this.showBayes = showBayes;
         this.showLogistics = showLogistics;
         this.replies = new LinkedList<>();
-        this.maximumLikelihoodClass = "";
-        this.maximumProb = 0;
+        //this.maximumLikelihoodClass = "";
+        //this.maximumProb = 0;
     }
 
     public String getServerPath() {
@@ -73,25 +76,28 @@ public class Agent extends AbstractActor {
 
         rbuilder.match(Request.class, request -> {
             getContext().actorSelection(serverPath).tell(request, getSelf());
-            replies.clear(); maximumLikelihoodClass = "";
-            System.out.println("Request.class");
-            Thread.sleep(timeout);
-            System.out.println("    - Maximum-likelihood class: " + maximumLikelihoodClass);
+            replies.clear();
+            //System.out.println("Request.class");
+            //Thread.sleep(timeout);
+            //System.out.println("    - Maximum-likelihood class: " + maximumLikelihoodClass);
         });
 
         rbuilder.match(Response.class, response -> {
             replies.add(response);
+            DecimalFormat df = new DecimalFormat("0.0000");
             System.out.println("Classifier response: ");
             System.out.println("    - Class name: " + response.getClassName());
             if(showBayes) {
-                System.out.println("    - Bayes probability: " + response.getBayesProb());
+                System.out.println("    - Bayes probability: " +
+                        df.format(response.getBayesProb()));
             }
             if(showLogistics) {
-                System.out.println("    - Logistic probability: " + response.getLogisticProb());
+                System.out.println("    - Logistic probability: " +
+                        df.format(response.getLogisticProb()));
             }
             if(showBayes && showLogistics) {
-                System.out.println("    - Average probability: " + (response
-                .getLogisticProb() + response.getBayesProb()) / 2);
+                System.out.println("    - Average probability: " +
+                        df.format(response.getAverage()));
             }
         });
 

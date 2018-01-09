@@ -11,7 +11,7 @@ import org.apache.commons.cli.*;
 /**
  * Program uruchamiający serwer systemu SAG. Serwer zbiera informacje nt. uruchomionych w systemie klasyfikatorów oraz przyjmuje zapytania od requesterów i rozsyła je do klasyfikatorów.
  */
-public class Launcher {
+public class Server {
 
     /**
      * Server entry point.

@@ -34,4 +34,5 @@ public class LearnReply implements Serializable {
     public void setMsg(String msg) {
         this.msg = msg;
     }
+
 }

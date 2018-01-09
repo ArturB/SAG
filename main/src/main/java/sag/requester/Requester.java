@@ -91,7 +91,6 @@ public class Requester {
             system.terminate();
 
 
-
         } catch(ParseException pe) {
             System.out.println("Unknown option!");
         }

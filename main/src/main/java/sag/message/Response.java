@@ -9,6 +9,7 @@ public class Response implements Serializable {
     private double bayesProb;
     private double logisticProb;
     private String className;
+
     private static final long serialVersionUID = 68539058435850385L;
 
     /**
@@ -44,5 +45,13 @@ public class Response implements Serializable {
 
     public void setClassName(String className) throws Exception {
         this.className = className;
+    }
+
+    /**
+     *
+     * @return Zwraca średnią arytmetyczną prawdopodobieństwa obliczonych dwoma metodami.
+     */
+    public double getAverage() {
+        return (bayesProb + logisticProb) / 2;
     }
 }

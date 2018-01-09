@@ -73,7 +73,7 @@
     			<artifactId>maven-assembly-plugin</artifactId>
     			<executions>
 
-                    <!-- launcher.jar -->
+                    <!-- server.jar -->
         			<execution>
                         <id>sag-launcher</id>
             			<phase>package</phase>
@@ -81,7 +81,7 @@
                 			<goal>single</goal>
             			</goals>
             			<configuration>
-							<finalName>launcher</finalName>
+							<finalName>server</finalName>
 
                             <appendAssemblyId>false</appendAssemblyId>
                 			<descriptorRefs>
@@ -90,7 +90,7 @@
 							<archive>
 								<manifest>
 									<mainClass>
-                                        sag.server.Launcher
+                                        sag.server.Server
                                     </mainClass>
 								</manifest>
 							</archive>
@@ -171,7 +171,7 @@
                             <jar>target/launcher.jar</jar>
                             <errTitle>SAG System Launcher</errTitle>
                             <classPath>
-                                <mainClass>sag.server.Launcher</mainClass>
+                                <mainClass>sag.server.Server</mainClass>
                                 <addDependencies>true</addDependencies>
                                 <preCp>anything</preCp>
                             </classPath>
