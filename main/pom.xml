@@ -160,15 +160,15 @@
                 <artifactId>launch4j-maven-plugin</artifactId>
                 <executions>
 
-                    <!-- launcher.exe -->
+                    <!-- server.exe -->
                     <execution>
                         <id>launcher-win</id>
                         <phase>install</phase>
                         <goals><goal>launch4j</goal></goals>
                         <configuration>
                             <headerType>console</headerType>
-                            <outfile>target/launcher.exe</outfile>
-                            <jar>target/launcher.jar</jar>
+                            <outfile>target/server.exe</outfile>
+                            <jar>target/server.jar</jar>
                             <errTitle>SAG System Launcher</errTitle>
                             <classPath>
                                 <mainClass>sag.server.Server</mainClass>

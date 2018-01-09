@@ -5,9 +5,13 @@ import akka.actor.Props;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
 import akka.japi.pf.ReceiveBuilder;
+import sag.message.Aggregate;
 import sag.message.Request;
 import sag.message.Response;
 
+import java.math.BigDecimal;
+import java.math.MathContext;
+import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.LinkedList;
 
@@ -20,9 +24,10 @@ public class Agent extends AbstractActor {
     private String serverPath;
     private Boolean showBayes, showLogistics;
 
-    LinkedList<Response> replies;
-    //private LinkedList<String> maximumLikelihoodClass;
-    //private double maximumProb;
+    private LinkedList<String> maximumLikelihoodClass;
+    private BigDecimal maximumProb;
+    private MathContext mc;
+    private DecimalFormat df;
 
     private final LoggingAdapter log = Logging.getLogger(getContext().getSystem(), this);
 
@@ -52,9 +57,10 @@ public class Agent extends AbstractActor {
         this.serverPath = serverPath;
         this.showBayes = showBayes;
         this.showLogistics = showLogistics;
-        this.replies = new LinkedList<>();
-        //this.maximumLikelihoodClass = "";
-        //this.maximumProb = 0;
+        this.maximumLikelihoodClass = new LinkedList<>();
+        this.mc = new MathContext(4, RoundingMode.HALF_EVEN);
+        this.maximumProb = new BigDecimal(0, mc);
+        this.df = new DecimalFormat("0.0000");
     }
 
     public String getServerPath() {
@@ -63,6 +69,22 @@ public class Agent extends AbstractActor {
 
     public void setServerPath(String serverPath) {
         this.serverPath = serverPath;
+    }
+
+    public LinkedList<String> getMaximumLikelihoodClass() {
+        return maximumLikelihoodClass;
+    }
+
+    public void setMaximumLikelihoodClass(LinkedList<String> maximumLikelihoodClass) {
+        this.maximumLikelihoodClass = maximumLikelihoodClass;
+    }
+
+    public BigDecimal getMaximumProb() {
+        return maximumProb;
+    }
+
+    public void setMaximumProb(BigDecimal maximumProb) {
+        this.maximumProb = maximumProb;
     }
 
     /**
@@ -76,29 +98,39 @@ public class Agent extends AbstractActor {
 
         rbuilder.match(Request.class, request -> {
             getContext().actorSelection(serverPath).tell(request, getSelf());
-            replies.clear();
-            //System.out.println("Request.class");
-            //Thread.sleep(timeout);
-            //System.out.println("    - Maximum-likelihood class: " + maximumLikelihoodClass);
+            maximumLikelihoodClass.clear();
+            maximumProb = new BigDecimal(0, mc);
         });
 
         rbuilder.match(Response.class, response -> {
-            replies.add(response);
-            DecimalFormat df = new DecimalFormat("0.0000");
+            BigDecimal prob = new BigDecimal(0, mc);
             System.out.println("Classifier response: ");
             System.out.println("    - Class name: " + response.getClassName());
             if(showBayes) {
-                System.out.println("    - Bayes probability: " +
-                        df.format(response.getBayesProb()));
+                System.out.println("    - Bayes probability: " + df.format(response.getBayesProb()));
+                prob = response.getBayesProb();
             }
             if(showLogistics) {
-                System.out.println("    - Logistic probability: " +
-                        df.format(response.getLogisticProb()));
+                System.out.println("    - Logistic probability: " + df.format(response.getLogisticProb()));
+                prob = response.getLogisticProb();
             }
             if(showBayes && showLogistics) {
-                System.out.println("    - Average probability: " +
-                        df.format(response.getAverage()));
+                System.out.println("    - Average probability: " + df.format(response.getAverage()));
+                prob = response.getAverage();
             }
+            if(prob.compareTo(maximumProb) == 0) {
+                maximumLikelihoodClass.add(response.getClassName());
+            }
+            else if(prob.compareTo(maximumProb) == 1) {
+                maximumLikelihoodClass.clear();
+                maximumLikelihoodClass.add(response.getClassName());
+                maximumProb = prob;
+            }
+        });
+
+        rbuilder.match(Aggregate.class, a -> {
+            System.out.println("\n\n###########\n# Summary #\n###########\n");
+            System.out.println("  - Maximum likelihood class: " + maximumLikelihoodClass + " with probability = " + df.format(maximumProb) + "\n\n");
         });
 
         // DEFAULT

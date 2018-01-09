@@ -1,13 +1,16 @@
 package sag.message;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
+import java.math.MathContext;
+import java.math.RoundingMode;
 
 /**
  * Odpowiedź klasyfikatora za zadanie klasyfikacji tekstu. Zawiera wyznaczone przez klasyfikator prawdopodobieństwo należenia sklasyfikowanego tekstu do obsługiwanej przez klasyfikator klasy. Wysyłana przez klasyfikator bezpośrednio do requestera.
  */
 public class Response implements Serializable {
-    private double bayesProb;
-    private double logisticProb;
+    private BigDecimal bayesProb;
+    private BigDecimal logisticProb;
     private String className;
 
     private static final long serialVersionUID = 68539058435850385L;
@@ -18,24 +21,25 @@ public class Response implements Serializable {
      * @param className Nazwa analizowanej klasy.
      */
     public Response(double bayesProb, double logisticProb, String className) {
-        this.bayesProb = bayesProb;
-        this.logisticProb = logisticProb;
+        MathContext mc = new MathContext(4, RoundingMode.HALF_EVEN);
+        this.bayesProb = new BigDecimal(bayesProb, mc);
+        this.logisticProb = new BigDecimal(logisticProb, mc);
         this.className = className;
     }
 
-    public double getBayesProb() {
+    public BigDecimal getBayesProb() {
         return bayesProb;
     }
 
-    public void setBayesProb(double bayesProb) {
+    public void setBayesProb(BigDecimal bayesProb) {
         this.bayesProb = bayesProb;
     }
 
-    public double getLogisticProb() {
+    public BigDecimal getLogisticProb() {
         return logisticProb;
     }
 
-    public void setLogisticProb(double logisticProb) {
+    public void setLogisticProb(BigDecimal logisticProb) {
         this.logisticProb = logisticProb;
     }
 
@@ -51,7 +55,7 @@ public class Response implements Serializable {
      *
      * @return Zwraca średnią arytmetyczną prawdopodobieństwa obliczonych dwoma metodami.
      */
-    public double getAverage() {
-        return (bayesProb + logisticProb) / 2;
+    public BigDecimal getAverage() {
+        return (bayesProb.add(logisticProb)).divide(new BigDecimal(2));
     }
 }

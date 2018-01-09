@@ -4,6 +4,7 @@ import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import com.typesafe.config.ConfigFactory;
 import org.apache.commons.cli.*;
+import sag.message.Aggregate;
 import sag.message.Request;
 
 import java.io.IOException;
@@ -88,6 +89,7 @@ public class Requester {
             requester.tell(new Request(cv, requester), null);
 
             Thread.sleep(timeout);
+            requester.tell(new Aggregate(), null);
             system.terminate();
 
 
