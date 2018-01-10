@@ -1,0 +1,291 @@
+Software Engineer
+Software Engineer - Ryan Anderson Software Services
+
+Chicago, IL
+
+Authorized to work in the US for any employer
+Work Experience
+
+Software Engineer
+Ryan Anderson Software Services -
+Sycamore, IL
+
+February 2014 to Present
+
+* Used Microsoft Access to create billing software for generating invoices and billing statements for clients
+
+Web Developer
+Sycamore, IL
+
+August 2009 to Present
+
+* Created various tables for MySQL database schemas that adhered to normal forms 
+* Created complex SQL queries that utilized joins, correlated subqueries, derived tables, unions, set differences, and various built-in MySQL functions to perform CRUD operations 
+* Developed stored procedures that utilized explicit transactions with commits and rollbacks; these were used to insert data across tables that had relationships 
+* Created stored procedures that utilized prepared statements, variables, and conditional logic 
+* Used PHP 5.5 to code a utility class that contained methods for salt/hash generation and validation of plaintext against a hash 
+* Utilized various one-way hashing schemes and/or key derivation functions, including blowfish, md5, and pbkdf2 
+* Implemented Google AdSense ad code 
+* Used PHP to manage sessions and cookies 
+* Used HTML5 semantic elements to structure content 
+* Used jQuery UI Widget Factory to develop widgets for joining a mailing list and displaying a modal dialog window 
+* Registered jQuery UI plug-ins on npm (http://npmjs.com/~plainmacaron) 
+* Created Git repository on GitHub (https://github.com/plainmacaron/ ) 
+* Created Grunt files to run tasks for minifying, checking with JSHint, serving, and watching for changes 
+* Created dynamic websites that were compatible across major browsers and complied with web accessibility and UX standards 
+* Successfully converted Adobe Photoshop webpage layouts to HTML and CSS 
+* Created applications for content management, administration, and maintenance so that administrators would be able to upload images, edit content, manage users, etc. 
+* Used jQuery, PHP, HTML, CSS, SQL, AJAX, JSON, and MySQL to create the following: dynamic and responsive webpages, file uploaders with validation, slide shows, e-mail mailers, pagination, custom blogging engines, and other features 
+* Used Illustrator and Photoshop to create logos, icons, and other designs
+
+Educator
+Ryan Anderson Education Services -
+Sycamore, IL
+
+February 2004 to Present
+
+* Help secondary and tertiary education students as well as professionals achieve desired understanding of various subjects, including computer science, mathematics, physics, standardized test preparation, and music 
+* Help students attain desired results in AP Computer Science A, a course that requires the use of Java in the OOP paradigm 
+* Have had a lot of success tutoring for C#, ASP.NET, VB.NET, Python, PL/SQL, MATLAB, C++, PHP, WPF, and other subjects 
+* Provided tutorials on how to use ASP.NET Web Forms, C#, HTML5, CSS3, jQuery, and MySQL to develop complete website for viewing portfolios; with my help, student could complete ASP.NET website/application within a week 
+* Provided tutorials on how to create complex database models; explained constraints, circular references, junction tables, normalization, and how to create recursive and many-to-many relationships 
+* Provided instruction on how to use Python, NetworkX, jupyter, and Anaconda to perform data analysis of complex undirected networks by examining degree distributions, histograms, densities, shapes, and measures 
+* Developed a curriculum and syllabus for learning how to play a guitar or bass 
+* Provided instruction on how to perform technical tasks: tuning, stringing, correcting intonation problems, etc. 
+* Provided instruction on how to read musical notation
+
+Full-Stack Programmer
+Charles Schwab & Co., Inc. -
+Raleigh, NC
+
+August 2017 to November 2017
+
+* Worked on a team of contractors that helped to complete the development of solutions for products of Schwab Performance Technologies, including Schwab Advisor Portfolio Connect 
+* Implemented DDD by developing models and services for different domains to solve problems related to investing 
+* Created clean code by implementing repositories that were registered with a Unity container and injected as dependencies 
+* Engaged with various teams to meet acceptance criteria for tasks of sprint stories 
+* Designed and developed HTTP PATCH endpoints that met requirements provided by architects 
+* Created documentation to help internal users and/or external consumers understand algorithms, API endpoints, request/response requirements for different HTTP methods, and sequences of queries for performing operations on documents from MongoDB collections 
+* Described API endpoints with the OpenAPI Specification so that users could generate client libraries 
+* Built complex MongoDB queries for accessing from different collections documents that were related by identifiers 
+* Minimized side effects, lines of code, and redundancy by applying knowledge of functional programming to develop delegates and lambda expressions 
+* Developed unit and integration tests that thoroughly evaluated functionality that was developed for sprint stories 
+* Used Moq to develop unit tests that attained optimal code coverage 
+* Developed an algorithm for batching entities with optimized efficiency 
+* Worked on tasks that involved the development of proprietary NuGet packages
+
+Architect, Programmer Analyst, Database Administrator, and Full-Stack Programmer
+Aurico and CareerBuilder, LLC -
+Rolling Meadows, IL
+
+June 2017 to July 2017
+
+* Worked as the sole programmer and architect of the new WebACE platform 
+* Utilized MVVM, MVC, microservices, and SOA patterns to develop an improved version of a system that allows companies and applicants to order reports and track each step of a background screening process 
+* Used ASP.NET Web API, Entity Framework Core, ASP.NET Core, and SQL Server to develop microservices with RESTful APIs that could be updated and deployed independently of each other 
+* Created private schemata for microservices that were used for error logging, accounts, and orders 
+* Implemented the repository pattern to decouple a service layer from other parts of the overall architecture of the new WebACE platform 
+* Created for the presentation layer of the new platform an ASP.NET Core MVC web project, the features of which helped to easily achieve optimal performance and scalability 
+* Leveraged built-in DI features of ASP.NET Core MVC framework so that custom services could be injected into clients/controllers and clean, maintainable code could be developed without much effort 
+* Created complex LINQ queries with lambdas to gather for models only necessary data returned from REST requests 
+* Was the sole designer of the user interface and responsive layouts; used Bootstrap 4 for styling purposes 
+* Developed a Node.js project that was responsible for generating charts, graphs, and reports with TypeScript, JavaScript, React, FusionCharts, and other technologies, most of which were sourced from npm 
+* Taught other members of team how to deploy services and manage IIS 
+* Used Python and Flask to create a basic application for analysis purposes 
+* Created separate SQL Server database projects for each service 
+* Developed synchronous and asynchronous utilities for consuming web services 
+* Developed C# and VB.NET ASP.NET Web Forms projects to demonstrate the use of certain redistributable classes that would be used in the legacy system 
+* Mentored other programmers; showed them how to develop clean code, models, view models, extension methods, view components, views, ASP.NET Web API controllers, ASP.NET Core MVC controllers, complex LINQ queries with lambda expressions, utility classes, asynchronous methods, and repositories 
+* Developed support for JSON Patch and HTTP PATCH so that more efficient and lighter update requests could be made 
+* Utilized the Argon2 password hashing algorithm to meet certain security requirements for authentication 
+* Evaluated MongoDB to determine whether a NoSQL database would be ideal for developing a microservices architecture to meet certain, complex business needs 
+* Developed and implemented strategies for using SSIS to integrate/migrate data used by the legacy WebACE system 
+* Conducted meetings and created agendas to discuss and prioritize project goals as well as present status updates for the new WebACE platform 
+* Generated client-side code with Maven, Java, and Swagger CodeGen 
+* Made reusable features by developing ASP.NET Core MVC view components; eliminated the need for third-party software licenses 
+* Created documentation for Git, Maven, and Swagger tools so that other members of the team could easily learn and apply skills that were needed to complete tasks 
+* Documented workflows for Git, and explained to other members of the team branching strategies and how to use bash 
+* Maintained source code repositories and regularly created and assigned issues on GitHub 
+* Used Docker containers to make applications portable and deployable across various environments
+
+Full-Stack Programmer
+Northwestern Mutual Life Insurance Company -
+Milwaukee, WI
+
+November 2016 to January 2017
+
+* Adapted quickly to a fast-paced, agile development environment and contributed new ideas and approaches while working on a team that was part of the Next Generation Illustrations System (NGIS) group 
+* Worked on .NET solutions for a calculations engine that was responsible for performing complex computations and processing of info for insurance products and policies, such as MEC limit; this business logic was part of the backend of the Web/UI (ASP.NET Web API and React) apps that reps used to run illustrations 
+* Followed development patterns and models that were designed for the calculations engine 
+* Fixed bugs that caused SpecFlow scenarios and unit test methods to fail 
+* Created exhaustive SpecFlow feature files and unit test methods 
+* Carried out TDD methodologies to test view models that were used in the development of a WPF application 
+* Implemented logic for certain policies so that reps could get the most out of generating illustrations on web 
+* Used desktop version of application to generate insurance illustrations for testing and writing SpecFlow scenarios 
+* Contributed positive feedback and new ideas during retrospectives and daily stand ups 
+* Helped team achieve sprint deployment goals, which were usually on two-week timelines 
+* Used repository pattern and dependency injection for better abstraction and minimal code 
+* Minimized code by utilizing view models, DelegateCommand properties, command binding, INotifyPropertyChanged, and ObservableCollection<T> 
+* Created a WPF MVVM desktop application that allowed users to generate custom SpecFlow test scenarios and feature files for determining whether business rules for insurance illustrations were correctly implemented 
+* Followed standard WPF practices to develop a multitude of reusable, complex user and custom control components that helped to simplify and speed up the development of applications 
+* Created XAML resource dictionaries that contained colors, SVG graphics, and control templates that adhered to a style guide and themes that were used within web applications 
+* Worked on a Managed C++ project that was used to dynamically generate T4 templates
+
+ETL Developer, Full-Stack Programmer
+The PrivateBank -
+Chicago, IL
+
+June 2016 to September 2016
+
+* Developed numerous providers, ETL solutions that contained class libraries and projects for SSIS and database development; these allowed financial institutions to transform data so that it could be used as input per Calypso technologies after being loaded into output tables and exported to flat files that were saved to an instance of OpenText Content Server 
+* Created XML files and C# classes for dynamic-link libraries, all of which were required to enable an executable that ran as a Windows service to watch for and process files 
+* Developed LINQ queries that minimized lines of code 
+* Simplified the overall flows within SSIS packages by using T-SQL and stored procedures to transform data with queries, table variables, and control-of-flow statements 
+* Proposed and introduced different approaches that utilized normalization and other standard RDBMS practices that would conserve disk space and make it easier to use and maintain certain reusable data 
+* Worked closely with architect to gather all requirements for developing providers that would meet the expectations of financial institutions 
+* Created documentation, including files that clearly specified for auditors the mappings of input and output for each provider that processed certain trade data 
+* Created SSIS flows for writing data from Excel sources to SQL Server staging tables 
+* Created C# script tasks to deal with complex processing that SQL queries or stored procedures could not easily handle 
+* Implemented SSIS logging and maintained corresponding local databases that contained views and tables for configurations 
+* Used Entity Framework to create a multitude of classes that mapped custom entities to tables of SQL Server databases so that a data context for presenting logging history and maintaining data objects could be fulfilled 
+* Used Telerik Extensions for ASP.NET MVC to present data in grids and create effective UI/UX features 
+* Regularly created and/or maintained the models, views, partial views, controllers, data contexts, and security settings of an ASP.NET MVC website; most of this work was done for maintenance forms and presentation of logging information 
+* Created a control that could be used to maintain singleton sets of configuration data that did not frequently change; disabled operations of retrieval and deletion to prevent loss of data integrity 
+* Regularly checked in changes to TFS while being conscious of the work done by other members of team 
+* Improved responsiveness of custom plug-in used for resizing 
+* Introduced and implemented a new pattern that was used to process groups of input files rather than individual sources 
+* Performed integration testing to ensure that the logging UI/UX, Windows service, maintenance forms, databases, and DAL were interacting correctly; this was done after dynamic-link libraries were compiled and moved to appropriate directories along with XML settings, SQL Server projects were published, SSIS packages were deployed, and entities and data contexts were created 
+* Installed and regularly maintained instances of SQL Server 2008 and SQL Server 2014: changed configurations through SSCM, used backups to restore databases, deleted and republished database projects, edited data, refactored schemas, etc.
+
+Full-Stack Programmer
+SureTint Technologies, LLC -
+Elgin, IL
+
+December 2015 to April 2016
+
+* Worked on AngularJS portal application that allowed salons and individual stylists to access reports and utilities 
+* Corrected aggregation and grouping of data on reports 
+* Met for daily scrums to provide positive feedback and review the progress of a project that was part of a sprint 
+* Migrated formula creation from Mia (My Intelligent Assistant) app to portal 
+* Created for portal application a utility that could be used to create new organizations 
+* Developed utilities for adding clients and users en masse from CSV files 
+* Developed AngularJS factories to separate code from controllers for reusability 
+* Implemented classes for the SureTint API, a RESTful WCF C# library of services that returned JSON 
+* Developed form that could be used to register and subscribe to use Mia app 
+* Modified style sheet to improve the UI of the registration form 
+* Developed PHP scripts for sending cURL POST requests to SureTint RESTful WCF API 
+* Incorporated into customer-facing website transitions, animations, and modals that complied with UX standards 
+* Integrated BluePay payment processing into SureTint RESTful WCF API so that recurring payments could be created 
+* Utilized the Bootstrap grid system to create layouts in partial views, main views, and templates of AngularJS web portal 
+* Used the Node.js gulp package to automate tasks for viewing an application in a browser and building for deployment 
+* Maintained routes and states of AngularJS application 
+* Managed and Maintained Amazon DynamoDB database from within AWS 
+* Developed workflows for version control and deployment 
+* Demonstrated to QA team the features and functionality of Mia portal application 
+* Worked closely with QA team to identify and fix issues 
+* Used Restangular to implement REST service functions 
+* Used Fiddler and Postman to test endpoints of SureTint RESTful API by sending HTTP requests via POST or GET with varied parameters; analyzed responses to ensure that Restangular service functions and PHP scripts that used cURL would work 
+* Developed functions that streamlined, abstracted, and generalized code 
+* Managed the cache for AngularJS portal application
+
+Full-Stack Programmer
+Next Generation Logistics, Inc -
+Palatine, IL
+
+November 2015 to November 2015
+
+* Used Telerik UI for ASP.NET AJAX and Kendo UI to develop a prototype that demonstrated functionality and UI/UX features of migration of TMS desktop application to web 
+* Regularly checked in pending changes through TFS so that team members could work with or review updates
+
+Full-Stack Programmer, Architect, Technical/Application Support Consultant
+Illinois Back Institute -
+Wheaton, IL
+
+November 2012 to May 2015
+
+* Planned and developed n-tier C# ASP.NET Web Forms application/website that improved functionality and capabilities of project previously developed with Silverlight, HTML, and other technologies 
+* Developed a class library of custom composite web controls 
+* Provided remote and on-site development expertise and assistance for various projects 
+* Developed PHP scripts for forms that were used by marketing department to filter and generate lead information
+
+Full-Stack Programmer
+Marco Group International, Inc -
+Davenport, IA
+
+July 2012 to July 2013
+
+* Primarily worked on C# ASP.NET multi-tier/n-layer internal software project that contained an ASMX web service site and a Web Forms application, both of which delivered important information across various branches and departments 
+* Met with team for scrums, sprint planning, and other agile meetings to provide positive feedback and accept new ideas from other team members while projects progressed toward completion 
+* Documented code, workflows, schemata, and software development plans 
+* Regularly created and assigned tickets on Assembla to make team aware of tasks and issues that I managed 
+* Helped development team progress toward big-picture goal of migrating all important screens from Pick/MV Basic legacy system to more modern technologies 
+* Regularly kept track of changes with TortoiseSVN and Git so that other members of team wouldn't have to wait for updates 
+* Used Caché Object Model to enforce RI by wrapping schema-less data structures in business objects that could be used in .NET layer via proxy classes and .NET Managed Provider and manipulated with SQL 
+* Used System.Data namespaces and Caché SQL to develop complex C# code and queries for retrieving vital data within DAL 
+* Developed for HR a Microsoft Access project that contained a multitude of forms, reports, and VBA functions/subroutines that allowed end users to track and analyze an employee's training progress and requirements 
+* Maintained form and universal data connection libraries and InfoPath templates on SharePoint site 
+* Developed ASMX web services and accompanying schema that expedited the process and broadened the capabilities of developing forms with InfoPath; these services allowed designers to use data connections that transmitted XML SOAP request/response messages containing Caché data formed in custom structures and not confined to repeating groups 
+* Worked on Sitefinity e-commerce site: installed and managed SQL Server, configured IIS, improved architecture of default project by adding four new tiers, developed MVC and Web Forms widgets, created forms, and made themes/layouts 
+* Created composite and ASCX controls to accelerate development by condensing recurring code-behind/markup 
+* Used Telerik Reporting to develop for the ASN of an EDI process a barcode label that had very detailed specifications and strict requirements that needed to be met for shipments to be processed and received by big account; helped Marco to be one of few suppliers to pass all steps of validation 
+* Used SSRS, Telerik Reporting, Visual Studio Report Designer, and other reporting software to create custom reports for invoices, bills of lading, packing lists, and other types of documents, some of which used embedded images of signatures 
+* Corrected sizing and alignment of mailing label created with reports and label creation features of Microsoft Access 
+* Traveled to warehouse to calibrate and test for printing of mailing label reports created in Microsoft Access 
+* Utilized SharePoint Designer to create List/Form Web Parts to expose lists containing mutable freight and logistics data that was maintained by shipping/logistics department; these would eliminate custom code and the use of InfoPath
+
+Mobile Application Developer
+Dr. Daniel Weissbluth, M.D -
+Chicago, IL
+
+July 2011 to November 2012
+
+* Developed Weissbluth Method Parenting Myths, Version 1.0 (1) as part of a series of tutorials for a pediatrician looking to better understand Xcode, Objective-C, and iOS mobile application development 
+* Developed Weissbluth Method Sleep Consults, Version 1.0 (1) 
+* Designed icons and launch images 
+* Demonstrated the process of uploading an application through iTunes Connect
+
+Full-Stack Programmer
+Illinois Back Institute -
+Wheaton, IL
+
+January 2011 to July 2012
+
+* Developed from the ground up a system used for collecting and analyzing data for business performance optimization 
+* Created scalable, robust Silverlight applications with VB.NET, PHP, MySQL, and other technologies 
+* Used PHPExcel and PHPlot to generate on custom Excel templates reports and charts for analyzing trends, targeting patterns, seeing correlation, indicating key performance, monitoring health, and strategizing marketing plans 
+* Authored medical software that allowed users to enter data taken from a patient's MRI and track changes in a spine 
+* Created/executed advanced queries that efficiently retrieved only the most vital of relational data for analysis 
+* Maintained WordPress sites and worked with companies on driving traffic to landing pages for AdWords campaigns 
+* Configured CRON to execute PHP scripts that automatically sent notification e-mails and submitted missing data entries 
+* Maintained InfusionSoft web forms and e-mail campaigns that were used for lead generation 
+* Deployed application packages to Azure emulator to test cloud services for an enhancement of an existing system 
+* Utilized SSIS, SSAS, and SSRS to create executive dashboards, visualize data, generate reports, and execute ETL processes
+Education
+
+Bachelor's in Applied Mathematics
+Northern Illinois University DeKalb, IL
+
+2009
+Skills
+ASP (10+ years), ASP.NET (10+ years), C# (10+ years), DATABASE (10+ years), jQuery (10+ years)
+Additional Information
+
+SKILLS 
+Language, Framework, and Platform: C#, VB.NET, ASP.NET Web Forms, ASPX, ASP.NET MVC, ASP.NET Core, ASP.NET Web API, Razor Pages, Razor, Entity Framework Core, jQuery, jQuery UI, JavaScript, AngularJS, TypeScript, T-SQL, Silverlight, WPF, XAML, HTML, XHTML, CSS, XML, Markdown, VBA, VBScript, Classic ASP, Telerik Kendo UI, Sass, Bootstrap, Telerik UI for ASP.NET AJAX, Java, Python, SpecFlow, Gherkin, React, PHP, Classic ADO, ADO.NET, .NET Core, Windows, macOS, Moq 
+Database: MS SQL Server, MS Access, MySQL, Amazon DynamoDB, InterSystems Caché, MongoDB 
+Web Service/Resource: SOAP, RESTful, WCF, ASMX, WSDL, Swagger CodeGen, OpenAPI Specification 
+Business Intelligence: SSIS, SSRS, SSAS 
+Cloud Computing: AWS, MS Azure 
+Design/Architectural Pattern: Lazy Loading, Eager Loading, Singleton, Factory, Utility, Adapter, Publish-Subscribe, Dependency Injection, Repository, MVC, MVVM, SOA, Multitier, n-Layer, Monolithic, Microservices, REST 
+Data Structure and Algorithm: Singly-Linked List, Doubly-Linked List, Stack, Queue, Graph, Heap, Hash Table, Set, Binary Search Tree, Floyd-Warshall algorithm, Kruskal's algorithm, Prim's algorithm, sorting algorithms 
+CMS: WordPress, HubSpot, Telerik Sitefinity 
+Automation: Gulp, Grunt, Maven 
+Monitoring: Fiddler, Postman, Swagger UI 
+Middleware: OWIN, ASP.NET Core Middleware 
+Package Management: npm, Bower, NuGet, pip 
+Version Control: Subversion, TortoiseSVN, Git, Team Foundation version control, GitHub, Git Bash, SourceTree, GitHub Desktop 
+Methodology and Practice: Agile, Waterfall, DevOps, DDD, TDD 
+Inversion of Control: Unity Container, MEF, ASP.NET Core DI container 
+Container: Docker 
+Code Coverage: dotCover 
+Bundler: webpack

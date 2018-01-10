@@ -1,0 +1,59 @@
+IT Coordinator
+
+Englewood, OH
+
+Authorized to work in the US for any employer
+Work Experience
+
+IT Coordinator
+Pomeroy IT Solutions
+
+May 2016 to September 2016
+
+as an IT Coordinator for Luxottica and an PC Tech for Cincinnati Public Schools. 
+ 
+Lens Crafters - IT Coordinator 
+• Troubleshooting the install of IT equipment refresh at Luxottica for Lens Crafters. 
+• Work with Contractors on-site via phone 
+• Troubleshooting Network connection and supporting install of new equipment 
+being install and escalating major issues 
+• Using in-house ticketing system to track and escalate tickets during install. 
+ 
+Cincinnati Public Schools - PC Tech 
+• Helped with a PC refresh of roughly 1,300 desktops and laptops 
+• Unpacked, installed, physically set up, and removed desktops and laptops 
+• Used Windows PXE to install desktops and laptops over network 
+• Cable manage and install laptops inside laptop cart 
+• Worked with six others and delegate which each of us do and help each other 
+when we run into issues
+
+Helpdesk/Desktop Technician Intern
+Nucor Steel Gallatin
+
+September 2014 to December 2014
+
+May 2015 - August 2015 
+• Respond to helpdesk calls and tickets 
+• Troubleshoot Software, network/internet connectivity, and general questions 
+remotely 
+• Use Acronis and Veeam to create and manage base images for PC's and laptops 
+• Create and manage accounts in AD 
+• Adding/removing users and computers to various OU's 
+• Some experiencing modifying OU's 
+• Deploy new PC's and repair/replace PC's at various locations on site 
+• Setup and manage printers on a Windows 2012 server 
+• Deploy and repair/replace printers/copiers at various locations on site 
+• Setting up and deploying Mitel VOIP phones as well as troubleshooting 
+• Would go to sites around the plant and patch network drops 
+• Assisted with setting up Algo communication system 
+• Use remote programs such as Windows RDP, VNC, TeamViewer, Radmin, VPN 
+and the Desktop Central 
+• Supported many software applications including MS Office products, OnBase, 
+APM/ Ivara, Longwatch Viewer, various Windows 7, 8 and 10 issues and many more 
+applications
+Education
+
+Bachelors of Science in Information Technology
+University of Cincinnati Cincinnati, OH
+Skills
+AWS (1 year), Content Management (2 years), Content Management Systems (2 years), HTML (2 years), Computer Hardware (5 years), Microsoft Office (5 years), Networking (4 years)

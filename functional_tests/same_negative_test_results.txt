@@ -1,0 +1,3908 @@
+[INFO] [01/10/2018 01:02:13.343] [main] [akka.remote.Remoting] Starting remoting
+[INFO] [01/10/2018 01:02:13.796] [main] [akka.remote.Remoting] Remoting started; listening on addresses :[akka.tcp://RequesterSystem@127.0.0.1:5152]
+[INFO] [01/10/2018 01:02:13.796] [main] [akka.remote.Remoting] Remoting now listens on addresses: [akka.tcp://RequesterSystem@127.0.0.1:5152]
+
+Classifying document test_set_1\accountancy_31.txt...
+
+[WARN] [SECURITY][01/10/2018 01:02:14.030] [RequesterSystem-akka.remote.default-remote-dispatcher-5] [akka.serialization.Serialization(akka://RequesterSystem)] Using the default Java serializer for class [sag.message.Request] which is not recommended because of performance implications. Use another serializer or disable this warning using the setting 'akka.actor.warn-about-java-serializer-usage'
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0070
+    - Average probability: 0,0035
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9930
+    - Average probability: 0,9965
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\accountancy_32.txt...
+
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0001
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,9999
+    - Average probability: 0,5000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\accountancy_33.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0636
+    - Average probability: 0,5318
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,9364
+    - Average probability: 0,4682
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\accountancy_34.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\accountancy_35.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\accountancy_36.txt...
+
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9984
+    - Average probability: 0,9992
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0016
+    - Average probability: 0,0008
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant, accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\accountancy_37.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\accountancy_38.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\accountancy_39.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\accountancy_40.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9801
+    - Average probability: 0,9901
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\accountancy_41.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0302
+    - Average probability: 0,5151
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,9698
+    - Average probability: 0,4849
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\accountancy_42.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy, it] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\accountancy_43.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0362
+    - Average probability: 0,0181
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9638
+    - Average probability: 0,9819
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\accountancy_44.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\accountancy_45.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9990
+    - Average probability: 0,9995
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0010
+    - Average probability: 0,0005
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\accountancy_46.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9996
+    - Average probability: 0,9998
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0004
+    - Average probability: 0,0002
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\accountancy_47.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\accountancy_48.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9904
+    - Average probability: 0,9952
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0096
+    - Average probability: 0,0048
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\accountancy_49.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0753
+    - Average probability: 0,0377
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9247
+    - Average probability: 0,9623
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\accountancy_50.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\it_31.txt...
+
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0867
+    - Average probability: 0,0433
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0020
+    - Average probability: 0,5010
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,9980
+    - Average probability: 0,4990
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\it_32.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\it_33.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9996
+    - Average probability: 0,9998
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0004
+    - Average probability: 0,0002
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [medicine] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\it_34.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy, it] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\it_35.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\it_36.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0001
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9999
+    - Average probability: 1,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\it_37.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0429
+    - Average probability: 0,0215
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy, medicine, it] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\it_38.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,5873
+    - Average probability: 0,7937
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,4127
+    - Average probability: 0,2063
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\it_39.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,8798
+    - Average probability: 0,9399
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,1202
+    - Average probability: 0,0601
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,8723
+    - Average probability: 0,9362
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\it_40.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0295
+    - Average probability: 0,0147
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9705
+    - Average probability: 0,9853
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [it] with probability = 0,9853
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\it_41.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\it_42.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,9296
+    - Logistic probability: 0,0000
+    - Average probability: 0,4648
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,8923
+    - Average probability: 0,9461
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,1077
+    - Average probability: 0,0539
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\it_43.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,6827
+    - Average probability: 0,8414
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,3173
+    - Average probability: 0,1586
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\it_44.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\it_45.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,1786
+    - Average probability: 0,5893
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,8214
+    - Average probability: 0,4107
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\it_46.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,3711
+    - Average probability: 0,6855
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [medicine] with probability = 0,6855
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\it_47.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,8032
+    - Logistic probability: 0,0000
+    - Average probability: 0,4016
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [it] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\it_48.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0046
+    - Average probability: 0,5023
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,9954
+    - Average probability: 0,4977
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy, medicine] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\it_49.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0008
+    - Average probability: 0,0004
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9992
+    - Average probability: 0,9996
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\it_50.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,9999
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0001
+    - Average probability: 0,5000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\medicine_31.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,7488
+    - Average probability: 0,3744
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,2512
+    - Average probability: 0,6256
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [medicine, restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\medicine_32.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9576
+    - Average probability: 0,9788
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0424
+    - Average probability: 0,0212
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [medicine, restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\medicine_33.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [medicine] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\medicine_34.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0009
+    - Average probability: 0,5005
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,9991
+    - Average probability: 0,4995
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [medicine] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\medicine_35.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\medicine_36.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,9411
+    - Average probability: 0,4706
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0589
+    - Average probability: 0,5294
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [medicine, restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\medicine_37.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9995
+    - Average probability: 0,9998
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0005
+    - Average probability: 0,0002
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [medicine] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\medicine_38.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,9874
+    - Logistic probability: 0,0011
+    - Average probability: 0,4942
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0126
+    - Logistic probability: 0,9989
+    - Average probability: 0,5058
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\medicine_39.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9983
+    - Average probability: 0,9991
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0017
+    - Average probability: 0,0009
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant, medicine] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\medicine_40.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,1353
+    - Average probability: 0,5676
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [it] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\medicine_41.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0886
+    - Average probability: 0,5443
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,9114
+    - Average probability: 0,4557
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\medicine_42.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9447
+    - Average probability: 0,9723
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,7766
+    - Average probability: 0,8883
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [teaching] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\medicine_43.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0001
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,9981
+    - Average probability: 0,4991
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0019
+    - Average probability: 0,5009
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\medicine_44.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0222
+    - Average probability: 0,5111
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,9999
+    - Logistic probability: 0,0021
+    - Average probability: 0,5010
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0001
+    - Logistic probability: 0,9979
+    - Average probability: 0,4990
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [medicine] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\medicine_45.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9990
+    - Average probability: 0,9995
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0010
+    - Average probability: 0,0005
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\medicine_46.txt...
+
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0247
+    - Average probability: 0,5124
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [it] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\medicine_47.txt...
+
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\medicine_48.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0001
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9999
+    - Average probability: 1,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [medicine] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\medicine_49.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0093
+    - Average probability: 0,0047
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9907
+    - Average probability: 0,9953
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [medicine] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\medicine_50.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [medicine] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\restaurant_31.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\restaurant_32.txt...
+
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,2531
+    - Average probability: 0,6265
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,7469
+    - Average probability: 0,3735
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy, restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\restaurant_33.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9982
+    - Average probability: 0,9991
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0018
+    - Average probability: 0,0009
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy, restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\restaurant_34.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9725
+    - Average probability: 0,9862
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0275
+    - Average probability: 0,0138
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy, restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\restaurant_35.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\restaurant_36.txt...
+
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant, accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\restaurant_37.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,9964
+    - Average probability: 0,4982
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0036
+    - Average probability: 0,5018
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy, restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\restaurant_38.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,1941
+    - Average probability: 0,5970
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,8059
+    - Average probability: 0,4030
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\restaurant_39.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\restaurant_40.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,8099
+    - Average probability: 0,9049
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,1901
+    - Average probability: 0,0951
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy, restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\restaurant_41.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,3204
+    - Average probability: 0,6602
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\restaurant_42.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\restaurant_43.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,9999
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\restaurant_44.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy, restaurant, it] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\restaurant_45.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0003
+    - Average probability: 0,0002
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9997
+    - Average probability: 0,9998
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\restaurant_46.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy, restaurant, it] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\restaurant_47.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0447
+    - Average probability: 0,0224
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9553
+    - Average probability: 0,9776
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy, restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\restaurant_48.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9857
+    - Average probability: 0,9929
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0143
+    - Average probability: 0,0071
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy, restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\restaurant_49.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,9984
+    - Average probability: 0,4992
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0016
+    - Average probability: 0,5008
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\restaurant_50.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy, restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\teaching_31.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,6994
+    - Logistic probability: 0,0000
+    - Average probability: 0,3497
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\teaching_32.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [medicine, restaurant, teaching] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\teaching_33.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\teaching_34.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\teaching_35.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9999
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [teaching] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\teaching_36.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy, restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\teaching_37.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\teaching_38.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0287
+    - Logistic probability: 0,5328
+    - Average probability: 0,2807
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\teaching_39.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9997
+    - Average probability: 0,9998
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0003
+    - Average probability: 0,0002
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\teaching_40.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\teaching_41.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0012
+    - Average probability: 0,5006
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,9988
+    - Average probability: 0,4994
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\teaching_42.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0184
+    - Average probability: 0,0092
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\teaching_43.txt...
+
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\teaching_44.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [accountancy] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\teaching_45.txt...
+
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9999
+    - Average probability: 0,9999
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [medicine] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\teaching_46.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\teaching_47.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9991
+    - Average probability: 0,9996
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [teaching] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\teaching_48.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9990
+    - Average probability: 0,9995
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [teaching] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\teaching_49.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 1,0000
+    - Average probability: 0,5000
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+
+Classifying document test_set_1\teaching_50.txt...
+
+Classifier response: 
+    - Class name: accountancy
+    - Bayes probability: 0,0013
+    - Logistic probability: 0,0000
+    - Average probability: 0,0006
+Classifier response: 
+    - Class name: it
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0002
+    - Average probability: 0,0001
+Classifier response: 
+    - Class name: restaurant
+    - Bayes probability: 1,0000
+    - Logistic probability: 1,0000
+    - Average probability: 1,0000
+Classifier response: 
+    - Class name: teaching
+    - Bayes probability: 1,0000
+    - Logistic probability: 0,9998
+    - Average probability: 0,9999
+Classifier response: 
+    - Class name: medicine
+    - Bayes probability: 0,0000
+    - Logistic probability: 0,0000
+    - Average probability: 0,0000
+
+
+###########
+# Summary #
+###########
+
+  - Maximum likelihood class: [restaurant] with probability = 1,0000
+
+
+_______________________________________________________
+
+[INFO] [01/10/2018 01:07:51.477] [RequesterSystem-akka.remote.default-remote-dispatcher-4] [akka.tcp://RequesterSystem@127.0.0.1:5152/system/remoting-terminator] Shutting down remote daemon.
+[INFO] [01/10/2018 01:07:51.477] [RequesterSystem-akka.remote.default-remote-dispatcher-4] [akka.tcp://RequesterSystem@127.0.0.1:5152/system/remoting-terminator] Remote daemon shut down; proceeding with flushing remote transports.
+[INFO] [01/10/2018 01:07:51.540] [RequesterSystem-akka.actor.default-dispatcher-13] [akka.remote.Remoting] Remoting shut down
+[INFO] [01/10/2018 01:07:51.540] [RequesterSystem-akka.remote.default-remote-dispatcher-4] [akka.tcp://RequesterSystem@127.0.0.1:5152/system/remoting-terminator] Remoting shut down.

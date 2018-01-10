@@ -1,0 +1,75 @@
+SOFTWARE DEVELOPER
+SOFTWARE DEVELOPER
+
+Austin, TX
+
+Driven professional with a broad technical skill set. Excellent communicator. Known for taking on difficult tasks and getting tickets resolved. Thrives in environments that embrace new technologies. A savvy developer seeking new and greater opportunities.
+
+Authorized to work in the US for any employer
+Work Experience
+
+SOFTWARE DEVELOPER
+InMotion Software -
+Austin, TX
+
+December 2016 to October 2017
+
+I worked on iClicker software called REEF Education that allowed teachers to gather information about their students so that they could examine the areas of learning that need improvement based on student participation. 
+ 
+I simplified the workflow of the instructor by providing a backend for them to manage their day-to-day tasks when it came to grading quizzes, managing attendance, and participating in polling sessions. 
+ 
+Technologies used were Git, Redis, RabbitMQ, MongoDB, Servlets, Tomcat, JUnit 
+ 
+I worked on the company's workflow management system called Sluice that enabled a bank to provide an accurate appraisal on a home using the Sluice mobile platform and backend services. 
+ 
+I simplified the workflow of the QA team by creating an internal MOCK web application for testing, debugging, and simulating the work order management process. 
+ 
+Technologies used were Git, AngularJS, Spring Boot, Spring Security, REST, JPA, MariaDB, Gradle
+
+SOFTWARE DEVELOPER (Contract)
+MD Anderson Cancer Center -
+Houston, TX
+
+January 2016 to December 2016
+
+I was involved in designing and implementing an intranet application called PODS that allowed oncology researchers to lookup and annotate on a patient's molecular profile to see if the patient qualified to enroll in a clinical trial. 
+ 
+I simplified the workflow of researchers and scientists by building an internal web application for them to manage their day-to-day tasks. 
+ 
+Technologies used were SVN, AngularJS, Spring, REST, JPA, Hibernate, Tomcat, Oracle, Maven
+
+TRAINING COORDINATOR
+CHI St Luke's Health -
+Houston, TX
+
+March 2014 to October 2015
+
+I was involved in designing and preparing educational aids and materials, maintaining and updating curriculum requirements and training records, demonstrating adequate knowledge of learning management systems and web delivery tools, and demonstrating extensive knowledge of instructional design theory and implementation 
+ 
+Technologies used were LMS, Instructional Design
+
+ASST. LMS ANALYST
+St Luke's Health System -
+Houston, TX
+
+January 2013 to October 2013
+
+I was involved in enrolling employees into educational training sessions, building and managing online continuing education courses and curriculum, managing enrollment and transcript records of employees, assigning mandatory training requirements to employees based on job role, generating reports to managers using macros, and monitoring the Learning Plan, training history of employees, and importing data into LMS. 
+ 
+Technologies used were LMS, Microsoft Excel, FTP
+Education
+
+AAS in Computer Programming
+Houston Community College Houston, TX
+
+May 2016
+
+MBA
+Texas Southern University Houston, TX
+
+December 2011
+
+BS in Health Sciences
+UT Health Science Center San Antonio, TX
+
+May 2009

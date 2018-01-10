@@ -1,0 +1,49 @@
+Software Engineer
+Software Engineer
+
+Starkville, MS
+
+Sponsorship required to work in the US
+Work Experience
+
+Software Engineer
+Cybage Software Pvt. Ltd -
+Hyderabad, Telangana
+
+June 2012 to December 2014
+
+India 
+* Responsible for Development and testing of the software projects implemented at Cybage Software Pvt. Ltd 
+* Responsible for designing and Development of Business process management (Supply Chain Management and the tools used to develop the same). 
+* Responsible for unit testing of the Business processes. 
+* Responsible for training and monitoring a team of 5 interns
+
+Advantage Architect, Page Editor, Bartender Tools, Adobe Suite
+Frameworks
+
+2012 to 2012
+
+Java EE, Spring Framework, Hibernate, JUnit 
+Databases: MySQL, Oracle 11i, MS SQL Server 2008/2012, Apache Solr. 
+Platforms: Linux/Unix, Windows Server 2008/2012 
+Development Tools 
+: M.S SharePoint 2010, M.S Visual Studio, Crystal Reports, Maven 
+Advantage Architect, Page Editor, Bartender Tools, Adobe Suite, 
+Microsoft Office Suite, SVN, TFS, JIRA, GIT., SPSS, LINGO, Latex, 
+Bitbucket, Bamboo, Crucible, STS, Jetbrains intellij Idea, R-studio 
+ 
+Software Testing: Manual Testing, Jmeter
+Education
+
+Masters of Science in Statistics
+Mississippi State University
+
+May 2018
+
+Bachelors of Engineering in Information technology
+Chaitanya Bharathi Institute of Technology Hyderabad, Telangana
+
+2012
+Narayana Junior college
+
+2008

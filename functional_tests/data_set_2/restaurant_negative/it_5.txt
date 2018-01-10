@@ -1,0 +1,68 @@
+IT Consultant
+
+Wichita, KS
+
+Authorized to work in the US for any employer
+Work Experience
+
+IT Consultant
+Freelance IT Consulting -
+Wichita, KS
+
+June 2013 to Present
+
+Consulted with clients on network security, data migration, hardware and software procurement, and various security policies concerning team members to improve operation efficiency. 
+ 
+Bridged the gap between IT and non IT personnel. Wrote documents for basic IT training to help clients better understand how to use their hardware and software at an advanced level while also reducing security risks associated with inadequate knowledge of their systems. 
+ 
+Responsible for all desktop support issues requested by the clients. 
+ 
+Performed site survey for a given building and procure the proper hardware to set up a network to meet clients specific requests.
+
+Store IT Assistant
+Honie's Wig and Beauty Supply -
+Wichita, KS
+
+August 2015 to April 2016
+
+Handled all tier 1 and 2 IT requests. 
+ 
+Ensured all hardware and software was running at all times to prevent interruptions of the main operation. 
+ 
+Trained all new incoming employees on POS systems, QuickBooks, and IT documents. 
+ 
+Translated English to Korean and Korean to English for management. This included on call meetings, product descriptions, and IT documents such as password resets, and POS system troubleshooting.
+
+IT Network Consultant for CC's Cleaning Service
+Chong Cha's Cleaning Service -
+Wichita, KS
+
+January 2013 to March 2015
+
+Team Lead – setting the WLAN. This included site survey, hardware procurement, budget allocation, subnetting, setting up the clients; WiFi hardware and software, SSID, WPA2 encryption, wireless printers, and ensuring all WAPs are configured in optimal areas with proper coverage.  
+ 
+Achieved proper bandwidth control by subnetting the IP Address between the private and public systems. Including QoS setup between applications, ensuring systems are running at optimal settings. 
+ 
+Responsible for all software and hardware upgrades, PC and printer troubleshoot, desktop repairs.
+Education
+
+Bachelor of Science in Information Systems
+Kansas University Lawrence, KS
+
+2008 to 2012
+Skills
+Java (Less than 1 year), PC Hardware assembly (10+ years), VMware (Less than 1 year), Malware/Android Malware Reverse Engineering (Less than 1 year), Korean (10+ years), LAN (4 years), Python 3 (1 year), IT Consulting (4 years), Desktop support, Troubleshoot (5 years), Botnet Detection/Rootkits (Less than 1 year), Configure, deploy and manage network infrastructure (1 year), Linux CentOS (1 year), hardware and software installation, upgrades, configuration (3 years), Team Leader (2 years), Management (2 years), JavaScript (Less than 1 year), DHCP, VLAN/ VLAN tagging, Subnetting (1 year), DNS, SQL (1 year), HTML 5 (1 year), CSS3 (1 year), WAN (2 years), TCP/IP (3 years)
+Certifications/Licenses
+
+CompTIA Network+
+
+June 2017 to June 2020
+Additional Information
+
+Information Security: Policies, standards, network security, risk management. 
+ 
+Desktop Support: Hardware and software upgrades, installation, password resets, on call maintenance, diagnose, monitor, and troubleshoot Windows XP, Vista, 7, 10, and MAC OS X based systems. 
+ 
+Mobile Device: Android and iOS upgrades, troubleshooting, BYOD policies, VPN and remote login. 
+ 
+Created documents for troubleshooting hardware and software issues.

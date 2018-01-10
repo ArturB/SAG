@@ -1,0 +1,83 @@
+Software Developer
+Software Developer - Advantage360 Software
+
+Rancho Cucamonga, CA
+Work Experience
+
+Software Developer
+Advantage360 Software -
+Rancho Cucamonga, CA
+
+January 2008 to Present
+
+• Collaborate with a team of software developers to build solutions for customers (POS, CRM, AR, and AP). 
+• Played lead role in developing new invoice distribution solution moving front end logic (Fat client) to back end (SQL Server) processing millions of call detail records to produce subscriber invoices. 
+• Development of UI, SQL Development, Data Analysis, Ad-hoc queries 
+• Write C# .Net classes to be used through COM by other non-.Net applications (Visual FoxPro). 
+• Write SQL CLR C# functions to replace use of deprecated SQL functions. 
+• Provide customer support, and participate in delivering emergency patches.
+
+Business Analyst
+Bergelectric -
+Los Angeles, CA
+
+September 2002 to December 2007
+
+• Manage projects for in-house software application. Direct all aspects of project lifecycles, from user requirements, design, development, testing, and to the implementation of new modules for accounts payable and accounts receivable. 
+• Coordinate meetings with various departments and managers (HR, Accounting, Payroll, Construction, and Finance) to report on project status and progress. Manage tool inventory system. 
+• Migration of VFP tables to SQL Server 2005. Designed, developed and deployed Employee Paid Time Off module and Order Tracking application.
+
+Programmer Analyst
+Vivendi Universal Studios -
+Universal City, CA
+
+June 2000 to September 2002
+
+• Serve as key participant in team projects and solutions initiation and implementation, including large project to track product licensing by territory for the Television Network Group. 
+• Organized and managed rollout of production support releases. 
+• Enhanced existing applications after detailed analysis with improved processes to better meet important business needs. Documented new and existing application processes. 
+• Provide on call 24/7 production support for domestic and international users.
+
+Analyst
+Countrywide Home Loans -
+Calabasas, CA
+
+December 1998 to June 2000
+
+• Contributed as an active member of team projects. 
+• Provided software support, maintenance, and production support for Visual FoxPro/SQL Server mortgage loan origination systems (EDGE). 
+• Identified and analyzed complex application issues and recommended solutions. 
+• Created reports, debugged source code, and documented system issues.
+
+Programmer Analyst
+Healthcare Systems Associates -
+Pasadena, CA
+
+June 1996 to December 1998
+
+• Participated in projects, gathering user requirements and developing add-on modules and ad-hoc reports to meet medical billing client needs. 
+• Wrote data conversion to migrate from one medical billing system to FoxMed. 
+• Maintained customer databases. Managed HCFA changes and updated HCFA templates in FoxPro system. 
+• Investigate claims denials, update CPT, ICD9, insurance, primary care, and referring physicians' tables as needed. 
+• Travelled to doctor offices for system installation, configuration, and support. 
+• Provide training on medical billing system.
+Education
+
+Master of Science in Health Care Informatics
+University of San Diego San Diego, CA
+
+May 2018
+
+Bachelor of Science in Business/Information Systems
+University of Phoenix Ontario, CA
+
+2010
+Skills
+MS SQL SERVER (10+ years), SQL (10+ years), SQL SERVER (10+ years), .NET (10+ years), C# (10+ years)
+Certifications/Licenses
+
+Microsoft Certified Technology Specialist – SQL Server 2008, Database Development
+Additional Information
+
+SKILLS 
+• Systems: Microsoft Applications: Excel, Word, PowerPoint, Access, SQL Server, SQL Server Reporting Services (SSRS), SSIS, C#.Net, Microsoft Project, Visio, Team Foundation Server (TFS), Visual Source Safe
