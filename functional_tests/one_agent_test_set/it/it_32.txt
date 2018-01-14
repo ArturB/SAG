@@ -1,0 +1,133 @@
+Software Development
+C#/.NET Software Developer
+
+Mountain View, CA
+
+Authorized to work in the US for any employer
+Work Experience
+
+Software Development
+YPK SOFTWARE -
+Mountain View, CA
+
+July 2015 to Present
+
+Responsibilities 
+Software Development projects include Cloud Computing such as: 
+1. Redhat's Openshift PaaS Cloud Computing - Linux (Fedora), Java, C, MySQL, PHP, Python, Networking, etc. 
+2. Microsoft Azure PaaS Cloud Computing - Windows, Linux (Ubuntu), SQL Server 2012, ASP.NET, C#, VS 2013, MVC, Web API, Web Service, Networking, etc. 
+3. Salesforce Cloud 9 PaaS Cloud Computing. 
+4. OpenStack IaaS/PaaS development – Ubuntu,VirtualBox, Windows, MySQL, Bash, Networking, etc. 
+ 
+Microsoft Technology includes Web development, WPF, Windows 8/10 Apps, XAML, WPF, Hyper-V for VM,  
+Linux: Oracle VirtualBox for VM, Ubuntu, Networking. 
+Microsoft development environment - C#, ASP.NET, SQL Server 2012, SSIS, SSAS, SSRS, etc. 
+ 
+BOEING COMPANY Feb. 2015 – Jun. 15, 2015 
+C#/.NET Software Developer (contractor) 
+Software Development for Aircraft Maintenance System 
+ Microsoft .NET/C# (ASP.NET), Oracle 11g PL/SQL, Sybase MS SQL Server, Windows Server 2008 R2 
+ Object-Oriented programming using Microsoft C# with Winforms and WPF development (XAML). 
+ Full SDLC Software Development including Functional Design Spec, Unit Test, System Integration Test (SIT) and Regression Test. 
+ Design using OOD/OOP for every project. 
+ Microsoft Visual Studio Team Foundation Server for Software Configuration (version control and testing).
+
+Software Engineer
+Boeing -
+St. Louis, MO
+
+February 2015 to June 2015
+
+WPF, Winforms, C# for Boeing projects.
+
+C#/.NET Software Developer
+Hewlett Packard
+
+February 2013 to August 2014
+
+for Enterprise Services 
+Software Development for large-scale integrated US Medicaid Information System. 
+* Microsoft .NET/C#, Oracle 11g, SQL Server 2005, Windows Server 2008 R2 
+* Object-Oriented programming using HP's proprietary .NET/C# iC.Framework. 
+* Full SDLC Software Development including Functional Design Spec, Unit Test, System Integration Test (SIT) and Regression Test. 
+* Design using OOD/OOP for every project. 
+* Adherence to HP's project management and quality assurance methodologies, tools, and methods 
+* IBM Rational Clear Case, Clear Quest. 
+* Coverity Static Code Analysis.
+
+Senior Software Development Lead
+National Tsing Hua University
+
+March 2005 to October 2012
+
+Led development of University and Research Information systems including the following: 
+* Software Development for an Audiobook system for the blind 
+* Imaging Information System for Brain Research 
+* Software Development for Accounting System, Payroll System, and Purchase Order System 
+* Foreign Exchange Student Registration and Tracking System 
+* Statistical Analysis and Reporting for Student Academic Performance Information System 
+* World University Ranking Information System 
+* Academic Scholarship Information System 
+* Android Development 
+* Technologies used include: C#/.NET, TTS, MS Windows, MS SQL Server 2005/2008, IIS, FoxPro, Oracle 10g, Sybase, MySQL, Windows 2008 Server, PHP, Apache, Linux, Java/J2EE.
+
+Senior Software Engineer
+Ross Systems -
+Redwood City, CA
+
+1993 to 2004
+
+Senior Software Engineer for software vendor specializing in process manufacturing. Served as major developer for applications and ERP software. Developed database applications and implemented and upgraded systems. Accomplishments include: 
+* Skillfully migrated data to Oracle 8i and Oracle 9, 10, etc. by completely rewriting programs that transition company to new product line and enhanced productivity. 
+* Enabled Ross Systems to have its own UNIX product line by programming in UNIX-based systems that led to major profit-generating HP/UX product on lucrative UNIX platform. 
+* Major developer in developing Middleware, Gembase, for ERP and other software development. 
+* Worked on a team for the development of Chinese interface, resulting in winning large contracts. 
+* Nearly 11 years work in C/C++ and Oracle RDBMS. Other works include MS SQL Server, Sybase and other RDBMS as well. Also, some Java programming. 
+* Some work on Java on J2EE development, such as Tomcat/Apache platform. 
+* SDLC software development including Functional Design Specs. Unit test, SIT, Regression Test.
+
+Programmer Analyst
+EXPONENT -
+Menlo Park, CA
+
+1993 to 1993
+
+Programmer Analyst to provide programming support for Failure Analysis to evaluate statistics and data relating to major public incidents due to engineering and scientific failures (e.g. airlines, automotive, space shuttle, earthquakes, etc.). Developed software using C/C++ and SQL that enabled integration of project accounting with general accounting functions. Oracle Forms and Oracle Financials were also used in the development of the systems.
+
+Project Engineer
+TMA -
+McLean, VA
+
+1989 to 1992
+
+Served as Project Engineer for government contracting firm that delivers information systems, business intelligence, and systems integration for government agencies. Developed middleware to integrate Oracle and Informix database applications on Sun Solaris UNIX and DEC VAX/VMS systems. Successfully used Oracle tools for developing applications for use with existing company infrastructure and document processing. Developed whitepaper that was published in well-known industry trade paper, Oracle User's World.
+Education
+
+Master of Computer Science in Computer Science
+National Tsing Hua University Hsinchu
+
+September 1980 to June 1982
+
+Master of Science in Computer Science
+Michigan State University East Lansing, MI
+
+Bachelor of Science in Mathematics
+National Taiwan Normal University 台北市
+Additional Information
+
+Highly motivated and results-oriented Senior Software Development Engineer / Database Programmer possessing over 25 years of software development experience and exceptional technical, analytical, and communication skills. Full software development lifecycle experience with a demonstrated ability to design, develop, and test multi-tiered solutions for large global, regulated organizations, corporations, government agencies, and higher educational institutions systems. Solid track record of consistently delivering quality software code utilizing unit-testing and regression test tools and methods. Expertise in applications development, systems integration, middleware and database development using Microsoft and Oracle software development toolsets (.NET, C#, Java, JavaScript, Web Services, SQL: Oracle PL/SQL, SQL Server T-SQL, and Stored Procedure). 
+HP Advanced knowledge of software design and development process. Deep understanding of design patterns and OO programming. Experience with developing SaaS applications or large-scale consumer web applications. Strong programming knowledge of Windows/.NET, Java, C/C ++. Knowledge and understanding in jQuery/plug in UIs. Knowledge, practical experience and Understanding of HTML / JavaScript. Robust understanding and experience with application and database query tuning (25 years in Database Industry). Proven architectural and development experience in transitioning legacy systems into modern web frameworks. 
+ 
+Technical Expertise 
+Hardware: HP/UX, Sun Solaris, IBM RS 6000 (AIX), Intel PCs and Apple Macintoshes. 
+Software & OS: UNIX (HP/UX, IBM AIX, Sun Solaris, DEC Digital UNIX), MS Windows […] 7, DEC/Compaq/HP VAX OpenVMS, RDBMS (Oracle […] Sybase SQL Server, MySQL, Informix, Ingres and RDB. Sybase 12.5. Windows 2003 Server, Windows 2008 Server. 
+Languages & Networks: C, C++, C#, Java, JavaScript, Visual Basic/VB.NET, MS ASP and UNIX Shell; TCP/IP and LAN. 
+Development: Object-Oriented design, Web Services (SOAP, REST), WCF; MS Visual Studio […] Microsoft VB.NET/C# 5. MS ASP.NET, MS Windows SDK, ODBC, JDBC, UNIX C Compiler/Debugger (gdb/xdb), Java Development, XML, Pure Software Purify, Numega BoundsChecker and VMS C Compiler/Debugger. ADO.NET. Microsoft MS SQL Server […] SQL Server Database Administration (DBA). ETL, Business Intelligence, Data Warehouse/Data Warehousing. SAS. 
+T-SQL, Stored Procedures. SQLServer SSIS, SSAS, SSRS. OLAP, OLTP. SAP Crystal Report. Web API, ASP.NET MVC, jQuery, Ajax. KnockOutjs. 
+IBM Rational Clear Case, Clear Quest. 
+Java J2EE. Tomcat/Apache. Eclipse development. Java Spring Framework. 
+Android Apps Development. 
+(Relational) Data Modeling. Database Tuning (DSS, OLTP). 
+Oracle 10g/11g Database Administration. DBA. Oracle Financial Applications 11i. Oracle Forms/Reports. Oracle WebLogic, Oracle GlassFish Application Server. 
+Agile Development Methodology. Cloud Computing (such as SaaS). Software Testing (Quality Assurance) 
+Coverity Static Code Analysis.

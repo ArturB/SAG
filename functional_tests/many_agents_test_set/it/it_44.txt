@@ -1,0 +1,248 @@
+Software Engineer
+Software Engineer
+
+Birmingham, AL
+
+Authorized to work in the US for any employer
+Work Experience
+
+Software Engineer
+McLeod Software Systems -
+Birmingham, AL
+
+April 2015 to April 2016
+
+• Identify risk and support enterprise software solution designs 
+• Lead discussions with internal colleagues and client leadership on: architecture options, recommendations and issues 
+• Troubleshoot and take part in solving customer business challenges through software enhancements and changes 
+• Analyze customer modifications and determine programming changes (Java) needed to provide solutions 
+• Development Environment: Eclipse, Windows 7
+
+System Analyst, System Administrator - Enterprise
+University of Alabama at Birmingham, Academic Technology -
+Birmingham, AL
+
+August 2012 to October 2014
+
+• Learning management system (LMS) administration (Blackboard Learn) 
+• Certified LMS Administrator: 1) Course Delivery; 2) Community Engagement; 3) Content Management 
+• Environments: Blackboard Learn LMS, Canvas LMS, MS Server, SQL Server
+
+Contract/Consultant
+Pearson Education -
+Indianapolis, IN
+
+December 2009 to July 2013
+
+for Sun Microsystems) 
+Course Developer / Technical Writer 
+• Online Instructional Design / Course Author 
+◦ Problem Solving and Program Design Using Java (Java 1) 
+◦ Data Structures and Algorithms Using Java (Java 2) 
+◦ Health Information Technology 
+• Instructional Design 
+◦ Oracle Certified Java Programmer 
+◦ Oracle Certified Associate 
+• Developed methods for presentation of web-based training (WBT) online course content. 
+• Java 1 & 2: 2011 CODiE award winners. Used internationally by Pearson.
+
+Associate Professor (Adjunct)
+University of Maryland University College -
+Laurel, MD
+
+March 2011 to August 2012
+
+• Teaching: Principles of Distributed Database Systems (graduate-level course) 
+• Online Instructional Design / Course Development: Principles of Distributed Database Systems
+
+Contract/Consultant
+Blue Cross Blue Shield of Alabama -
+Birmingham, AL
+
+November 2007 to May 2008
+
+Systems Analyst 
+• Converted C programs with embedded SQL (ESQL/C) for database migration from Informix to DB2. 
+• Performed C code reviews and recommendations for Informix=>DB2 ESQL/C conversions. 
+• Modified/Refactored existing C programs to correct errors, upgrade interfaces and optimize operational efficiency (improve performance). 
+• Recommended, initiated, and assisted team migration to MS Visual Studio. 
+• Platform: Windows XP/UNIX, Visual C++/Visual Studio.
+
+Contract/Consultant
+Pearson Education -
+Indianapolis, IN
+
+August 2007 to March 2008
+
+Course Developer / Technical Writer 
+• Online Instructional Design/Course Author 
+◦ Problem Solving & Programming Concepts 
+◦ Problem Solving & Program Design Using C 
+◦ Data Structures & Algorithm Analysis Using C++ 
+• Evaluated and selected texts for authored courses.
+
+Contract/Consultant
+BE&K Software Engineering -
+Birmingham, AL
+
+2007 to July 2007
+
+Software Engineer 
+• Provided maintenance/enhancements for Workforce and Document Mgmt applications using C++/MFC/STL 
+• Modified/Refactored existing C++ applications to correct errors, upgrade interfaces and optimize operational efficiency (improve performance). 
+• Advised re: object vs relational database and implementation (impedance, load), database server clustering. 
+• Platform: Windows XP, Visual C++, MFC, STL, Visual Basic, C#, Visual Studio 2003/2005, MS SQL Server.
+
+Contract/Consultant
+AllStates @ Southern Nuclear -
+Birmingham, AL
+
+November 2005 to April 2006
+
+Software Engineer / Plant Digital Systems Engineer / Technical Writer 
+• Provided OOD/C++ instruction, design, maintenance, and quality assurance for digital systems used in the management of nuclear power plants. 
+• Developed specifications for Human-Machine Interaction; Analyzed legacy software systems for refactoring into object-oriented C++. 
+• Provided quality assurance analysis of vendor-supplied C/C++ implementations (with recommendations). 
+• Defined a specification/standard for OO software development process, programming practice, and style. 
+• Visual C++; MFC; TCP/IP Programming in C/C++, Pascal, FORTRAN; Windows; OpenVMS.
+
+Contract/Consultant
+Miles College -
+Birmingham, AL
+
+August 2003 to July 2005
+
+Associate Professor and Coordinator, Computer & Information Sciences [CIS] 
+• Provided management oversight, advising, curriculum development, and planning for the CIS major, 6 faculty members, 25 student advisees, and campus information technology (intranet). 
+• Designed a new thin client-based server-centric campus instructional/research infrastructure (incl. HPC and interfacing with software/hardware vendors: IBM, Sun, and other suppliers of servers, clusters, etc.). 
+• Coordinator and mentor for the NSF-funded Birmingham Area Consortium for Higher Education. 
+• Taught Programming Logic & Design (using UML), Software Engineering, Project Management, C/C++ Programming, C++ Algorithms and Data Structures, Object-Oriented Analysis and Design, and Web Design.
+
+Contract/Consultant
+Pyramid Digital Solutions -
+Birmingham, AL
+
+February 2003 to March 2003
+
+Software Developer 
+• Provided new feature design, programming, testing, and maintenance using C++, Rogue Wave. 
+• Provided object-oriented design (UML) to add XML processing to a data translation application.
+
+Client/Server Programmer/Analyst
+Infinity Insurance Company -
+Birmingham, AL
+
+November 2000 to July 2001
+
+• Provided OOAD and development of core server-side algorithms using Java. 
+• Served as the Fax DB (Oracle) Project Lead including J2EE/Servlet Programming, image compression, storage, extraction, expansion, and network printing. 
+• Provided development tool evaluation/selection (e.g., XML Spy, Together Control Center / UML) 
+• Environment: NT/Solaris; Visual Café Enterprise; WebLogic Server; SQL; XML//XSLT (XML Spy; FOP)
+
+Contract/Consultant
+Accenture @ BellSouth
+
+February 2000 to July 2000
+
+Software Developer 
+• Provided C++ OOAD using UML, implementation, testing and maintenance of Error Resolution Logic state machines. 
+• Provided ANSI C refactoring as preparation for translation of C modules to C++. 
+• Used OO analysis of requirements and specifications to optimize the design and implementation of Error Resolution Logic state machines (upgraded team approach to development). 
+• Used OO analysis (data modeling) to simplify and optimize the data model for inter-process communication and to optimize operational efficiency (improve performance). 
+• Environment: NT/Solaris/HPUX, HP SoftBench, Sun Workshop, Understand for C++, UML Studio.
+
+Software Engineer
+Group 8760 -
+Birmingham, AL
+
+March 1999 to February 2000
+
+• Provided C++ OOAD using UML, development, and testing of a multi-protocol encryption/decryption application incorporating the PGP, S/MIME and GISB standards for secure internet-based EDI. 
+• Provided maintenance and refactoring of C++ applications to optimize operational efficiency. 
+• Researched and evaluated development team tools. 
+• Environment: NT, UNIX (AIX, HPUX), Rogue Wave, MFC, Visio.
+
+Independent Contract/Consultant - Freelance
+Southern Dynamic Systems
+
+1998 to December 1998
+
+Software Engineer 
+• Provided object-oriented refactoring of an ANSI C fuzzy expert system for C++ reimplementation. 
+• Delivered files and documents including analysis of existing system, OMT static model of refactored system, and headers and source files for C++ definition and implementation of the static model. 
+• Used Understand for C/C++ to analyze existing system and Together/C++ for OOAD and preliminary implementation using Borland C++. 
+• Environment: MS Windows
+
+sole author
+University of Alabama at Birmingham -
+Birmingham, AL
+
+June 1992 to June 1998
+
+C++): Fine-Grained Object-Oriented Artificial Evolution of Artificial Neural Networks 
+• Accomplished full lifecycle development of a fine-grained object-oriented system with simulated evolution, neural networks, and fuzzy control libraries using C++ (extensive/intensive debugging experience). 
+• Achieved automated, unsupervised design of problem-specific solutions for diverse technical problems, i.e., neural networks for mathematical, classification, pattern recognition, and decision support problems 
+• Solved test-of-concept (simple mathematics and logic: XOR2, Complement4, Shift4, Rotate4) and proof-of-concept design problems. Generated novel neural network solutions for Fisher's Classification Problem (Iris Data); NASA O-Ring Performance Prediction; Post-Operative Patient Routing; and the main test - USAF Fighter Pilot Assistance - all with novel and unpredictable design outcomes. 
+• Used Multivariate Analysis of Variance (MANOVA, SPSS) to evaluate a multifactorial statistical design. Independent variables = Training, Reward, Algorithms, Coefficients, and Self-Adaptation (of coefficients). Dependent variables = Evaluation Cost, Error, Generalization, NProcessors, NConnections, and Fitness (a function of Error, Generalization, NProcessors, and NConnections).. 
+• Implemented strong object-oriented design using the Object Modeling Technique, templates (generics), function objects, runtime type information (RTTI), and heavy polymorphism with multiple inheritance. 
+• Single-handedly developed fault-free 182,000 C++ LOC to accomplish all of the above (sole author/implementor/etc.). 
+• Environment: Sun SPARC Workstation, SunOS (UNIX)/Solaris, gcc, MS Windows (PC) Workstation, Borland C++, MS Visual Studio / MS Visual C++. 
+• Technical writing deliverable: Dissertation published at the National Library of Congress.
+
+Contract/Consultant
+University of Alabama at Birmingham -
+Birmingham, AL
+
+June 1992 to December 1997
+
+Instructor 
+• Department of Computer Science - Taught C/C++ Language Programming. 
+• School of Special Studies - Taught C/C++ Language Programming; Object-Oriented Software Design. 
+• School of Health-Related Professions - Taught Computer Applications (Word Processing, Database, Spreadsheet, Telecommunication).
+
+Independent Contract/Consultant
+SONAT Headquarters, Information Technology Department -
+Birmingham, AL
+
+1997 to January 1997
+
+Instructor 
+• Provided professional-level instruction in Object-Oriented Software Development Using C++.
+Education
+
+Doctor of Philosophy in Computer and Information Sciences
+University of Alabama at Birmingham Birmingham, AL
+
+1998
+
+Research
+Alabama Academy of Sciences
+
+1995
+
+UAB Sigma Xi Research
+Alabama Academy of Sciences
+
+1994
+
+Master of Science in Computer and Information Sciences
+University of Alabama at Birmingham Birmingham, AL
+
+1992
+
+Master of Science in Behavioral Medicine
+University of Miami Miami, FL
+
+1989
+
+Bachelor of Arts in Behavioral Science
+University of Minnesota Minneapolis, MN
+
+1985
+Links
+
+http://mikalkeenan.info
+Additional Information
+
+Technical Summary 
+• 16 years of IT software development experience, primarily Object-Oriented and very strong C++/C.

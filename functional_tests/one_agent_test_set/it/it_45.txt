@@ -1,0 +1,47 @@
+Sr. Software Engineer
+
+Atlanta, GA
+
+Authorized to work in the US for any employer
+Work Experience
+
+Sr. Software Engineer
+ETI Software -
+Atlanta, GA
+
+October 2011 to September 2017
+
+Full-stack web app development in PHP (CakePHP) and Java (Spring and SmartGWT) with Javascript on the client with RDBMS and MongoDB databases. 
+ 
+Methodology: Agile (Scrum) and Test-Driven Development (TDD), with some elements of Extreme Programming (XP). 
+ 
+Telecomm industry applications at 50-person software company.  
+ 
+Database analysis, normalization, documentation, and stored procedures. 
+ 
+Joined a project that had struggled for years, and delivered working product within 6 months, twice. 
+ 
+Mentored programmers.
+
+Lead Research Informatics Analyst
+Emory Healthcare -
+Atlanta, GA
+
+February 2010 to October 2011
+
+Full-stack web development in PHP (Drupal) with Javascript on the client and MySQL RDBMS. 
+ 
+Analysis, design, coding; database design, administration; web design, implementation; web server setup, administration.
+Education
+
+Bachelor's in Physics
+Brown University Providence, RI
+
+September 1980 to May 1984
+Skills
+C (10+ years), C++ (3 years), HTML (10+ years), Java (5 years), Javascript (5 years), Perl (3 years), PHP (7 years), SQL (10+ years), Unix Administration (2 years), Linux (7 years), MySQL (5 years), Mongo DB (3 years), Apache Web Server (5 years), nginx, Tomcat, SVN, Git, PVCS, CakePHP (3 years), Drupal (2 years), Spring (2 years), Informix (5 years)
+Additional Information
+
+Training includes: Project Management, Agile/Scrum, High Performance Team Building, Technical Writing, Personality Type in Organizations, Time Management, Stress Management, Communication, Leadership, Teaching Methods, C++, SQL, Extended Relational Analysis (Database Design), UNIX Device Drivers. 
+ 
+Experience teaching: SQL (Beginning, Intermediate), Java, UNIX Operating System (Beginning, Intermediate, Advanced), UNIX System Administration (Beginning, Intermediate).
